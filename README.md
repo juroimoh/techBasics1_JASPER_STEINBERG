@@ -8,4 +8,6 @@ I haven't coded anything in the past, but I hope to learn and improve throughout
 ![very real graph](https://github.com/juroimoh/techBasics1_JASPER_STEINBERG/blob/main/miscellaneous/very_epic_graph.png)  
 Fig 1
 
+I have very basic experience with the logic of coding, such as conditionals, if-statements, and functions, but have no knowledge of how to implement these in python :(
+
 [^1]: basically a place where all my stuff goes.
