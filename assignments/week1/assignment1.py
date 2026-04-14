@@ -3,6 +3,7 @@ print("""
 I attempted to recreate my version of the digital media logo in ASCII art, but to no avail (see below), and decided to use a generator instead.
 The following art was generated using a ACSII "image to ascii" converter.
 However, the generator did not make the ASCII art symmetrical, so I had to tweak it by hand until I was happy with the result.
+(code formatting adds spaces between lines, which is why the art looks stretched)
 
 
 
