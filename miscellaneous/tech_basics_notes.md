@@ -90,8 +90,9 @@ This results in an error. Corrections follow:
 `print(f"The result is {result}")`  
 `print("The result is", result)`
 
-A snippet of working code, determining prices for different ages:
-`age = int(input("Enter your age:"))`  
+A snippet of working code, determining prices for different ages:  
+`age = input("Enter your age:"))`  
+`age = int(age)`  
 `if age > 0 and age < 110:`  
 `    if age > 18:`  
 `        print("1 Adult Ticket")`  
