@@ -43,7 +43,7 @@ Keep in mind, the if, elif and else executes whatever is after the colon `:`.
 ### Python Operators
 Operators are used to perform operations on variables and values.
 
-<ins>Arithmetic Operators</ins>
+<ins>Arithmetic Operators</ins>  
 | Operator | Name | Example |
 | --- | --- | --- |
 | + | Addition | x + y |
@@ -54,7 +54,7 @@ Operators are used to perform operations on variables and values.
 | ** | Exponential | x ** y |
 | // | Floor Division | x // y |
 
-<ins>Comparison Operators</ins>
+<ins>Comparison Operators</ins>  
 | Operator | Name | Example |
 | --- | --- | --- |
 | == | Equal to | a == b |
@@ -64,14 +64,14 @@ Operators are used to perform operations on variables and values.
 | < | Less than | a < b |
 | <= | Less than or equal to | a <= b |
 
-<ins>Logical Operators</ins>
+<ins>Logical Operators</ins>  
 Combine multiple conditions with: `and` , `or` and `not` (eg. `if a > b and a < c`).
 
-<ins>Identity Operators</ins>
+<ins>Identity Operators</ins>  
 Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location (eg. `a is b , a is not b`).  
 <sup>*Note it is **not** the same as `a == b`.</sup>
 
-<ins>Truth Table</ins>
+<ins>Truth Table</ins>  
 | a | b | a and b | a or b |
 | --- | --- | --- | --- |
 | False | False | False | False |
