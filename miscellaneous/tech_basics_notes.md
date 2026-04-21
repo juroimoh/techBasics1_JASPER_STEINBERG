@@ -42,6 +42,7 @@ Keep in mind, the if, elif and else executes whatever is after the colon `:`.
 
 ### Python Operators
 Operators are used to perform operations on variables and values.
+Includes arithmetic operators, assignment operators, comparison operators, logical operators, identity operators etc.
 
 <ins>Arithmetic Operators</ins>  
 | Operator | Name | Example |
