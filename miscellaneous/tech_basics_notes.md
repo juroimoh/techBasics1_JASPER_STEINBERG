@@ -83,7 +83,7 @@ Identity operators are used to compare the objects, not if they are equal, but i
 ### Code Fixes
 
 Consider the code:
-`result = 14 * 4  
+`result = 14 * 4 \n
 print("The result is" + result)`
 
 This results in an error. Corrections follow:
