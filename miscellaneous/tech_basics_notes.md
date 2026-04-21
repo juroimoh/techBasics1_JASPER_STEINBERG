@@ -82,11 +82,11 @@ Identity operators are used to compare the objects, not if they are equal, but i
 
 ### Code Fixes
 
-Consider the code:
+Consider the code:  
 `result = 14 * 4`  
 `print("The result is" + result)`
 
-This results in an error. Corrections follow:
+This results in an error. Corrections follow:  
 `print(f"The result is {result}")`  
 `print("The result is", result)`
 
