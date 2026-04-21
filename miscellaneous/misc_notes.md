@@ -65,7 +65,8 @@ Logical Operators
 Combine multiple conditions with: `and` , `or` and `not` (eg. `if a > b and a < c`).
 
 Identity Operators
-Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location (eg. `a is b , a is not b`).  *Note it is not the same as a == b
+Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location (eg. `a is b , a is not b`).  
+*Note it is not the same as a == b
 
 Truth Table
 | a | b | a and b | a or b |
