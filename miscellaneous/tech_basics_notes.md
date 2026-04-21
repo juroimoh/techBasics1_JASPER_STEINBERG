@@ -79,3 +79,14 @@ Identity operators are used to compare the objects, not if they are equal, but i
 | True | False | False | True |
 | False | True | False | True | 
 | True | True | True | True |
+
+### Code Fixes
+
+Consider the code:
+`result = 14 * 4  
+print("The result is" + result)`
+
+This results in an error. Corrections follow:
+`print(f"The result is {result}")  
+print("The result is", result)`
+
