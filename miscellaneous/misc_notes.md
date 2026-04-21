@@ -40,16 +40,19 @@ else:
 ```
 Keep in mind, the if, elif and else executes whatever is after the colon `:`.
 
-### Arithmetic and Comparison Operators:
+Arithmetic Operators:
 | Operator | Name | Example |
 | --- | --- | --- |
 | + | Addition | x + y |
 | - | Subtraction | x - y |
 | * | Multiplication | x * y |
-| / | DIvision | x / y |
+| / | Division | x / y |
 | % | Modulus | x % y |
 | ** | Exponential | x ** y |
 | // | Floor Division | x // y |
+
+Comparison Operators:
+| Operator | Name | Example |
 | --- | --- | --- |
 | == | Equal to | a == b |
 | != | Not equal to | a != b |
@@ -57,3 +60,18 @@ Keep in mind, the if, elif and else executes whatever is after the colon `:`.
 | >= | Greater than or equal to | a >= b |
 | < | Less than | a < b |
 | <= | Less than or equal to | a <= b |
+
+Logical Operators
+Combine multiple conditions with: `and` , `or` and `not` (eg. `if a > b and a < c`).
+
+Identity Operators
+Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location (eg. `a is b , a is not b`).
+*Note it is not the same as a == b
+
+Truth Table
+| a | b | a and b | a or b |
+| --- | --- | --- | --- |
+| False | False | False | False |
+| True | False | False | True |
+| False | True | False | True | 
+| True | True | True | True |
