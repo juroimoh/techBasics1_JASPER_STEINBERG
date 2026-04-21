@@ -24,7 +24,7 @@ It is a common practice in Python to use only lowercase characters in variable n
 - string `"text"`
 - int `394`
 - float `3.1415926`
-- boolean `True or False`
+- boolean `True or False` *Must be Uppercase, `false` would be wrong.
 - list, tuple, range
 - set, dict
 - NoneType
