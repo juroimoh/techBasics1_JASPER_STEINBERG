@@ -29,6 +29,7 @@ It is a common practice in Python to use only lowercase characters in variable n
 - set, dict
 - NoneType
 
+A small block of code containing a conditional if-clause:
 ```
 if semester == 2:
    print("Take Tech Basics I)
@@ -39,4 +40,20 @@ else:
 ```
 Keep in mind, the if, elif and else executes whatever is after the colon `:`.
 
-
+### Arithmetic and Comparison Operators:
+| Operator | Name | Example |
+| --- | --- | --- |
+| + | Addition | x + y |
+| - | Subtraction | x - y |
+| * | Multiplication | x * y |
+| / | DIvision | x / y |
+| % | Modulus | x % y |
+| ** | Exponential | x ** y |
+| // | Floor Division | x // y |
+| --- | --- | --- |
+| == | Equal to | a == b |
+| != | Not equal to | a != b |
+| > | Greater than | a > b |
+| >= | Greater than or equal to | a >= b |
+| < | Less than | a < b |
+| <= | Less than or equal to | a <= b |
