@@ -40,7 +40,10 @@ else:
 ```
 Keep in mind, the if, elif and else executes whatever is after the colon `:`.
 
-Arithmetic Operators
+### Python Operators
+Operators are used to perform operations on variables and values.
+
+<ins>Arithmetic Operators</ins>
 | Operator | Name | Example |
 | --- | --- | --- |
 | + | Addition | x + y |
@@ -51,7 +54,7 @@ Arithmetic Operators
 | ** | Exponential | x ** y |
 | // | Floor Division | x // y |
 
-Comparison Operators
+<ins>Comparison Operators</ins>
 | Operator | Name | Example |
 | --- | --- | --- |
 | == | Equal to | a == b |
@@ -61,14 +64,14 @@ Comparison Operators
 | < | Less than | a < b |
 | <= | Less than or equal to | a <= b |
 
-Logical Operators
+<ins>Logical Operators</ins>
 Combine multiple conditions with: `and` , `or` and `not` (eg. `if a > b and a < c`).
 
-Identity Operators
+<ins>Identity Operators</ins>
 Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location (eg. `a is b , a is not b`).  
-*Note it is not the same as a == b
+<sup>*Note it is **not** the same as `a == b`.</sup>
 
-Truth Table
+<ins>Truth Table</ins>
 | a | b | a and b | a or b |
 | --- | --- | --- | --- |
 | False | False | False | False |
