@@ -1,5 +1,5 @@
 import time
-import random #Necessary for engaging gameplay (and always adds much needed variation).
+import random # Necessary for engaging gameplay (and always adds much needed variation).
 import sys
 
 # This is a very basic dungeon escape.
