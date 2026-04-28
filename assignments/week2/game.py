@@ -404,6 +404,7 @@ if decision == 3:
                             gremlin_health -= chance
                             time.sleep(1)
                             type(f"The gremlin has {gremlin_health} health remaining.")
+                            time.sleep(1)
                         elif chance == 1:
                             type("You miss. Somehow.")
                             time.sleep(1)
