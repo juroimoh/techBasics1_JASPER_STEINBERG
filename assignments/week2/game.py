@@ -612,6 +612,7 @@ while orc_health > 0:
                     time.sleep(1)
                     orc_health -= chance
                     type(f"The orc has {orc_health} health remaining.")
+                    time.sleep(1)
                 else:
                     type("You miss.")
                     time.sleep(1)
@@ -622,6 +623,7 @@ while orc_health > 0:
                     time.sleep(1)
                     orc_health -= chance
                     type(f"The orc has {orc_health} health remaining.")
+                    time.sleep(1)
                 else:
                     type("You miss. You're not very good at this.")
                     time.sleep(1)
