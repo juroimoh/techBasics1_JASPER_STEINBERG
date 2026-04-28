@@ -417,6 +417,7 @@ if decision == 3:
                     time.sleep(2)
                     type("You feel like your combat abilities have improved.")
                     gremlin_fight = 1
+                    # This gives you a higher success rate when punching later on in the game!
                     break
 
                 type("The gremlin attacks you.")
