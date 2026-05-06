@@ -6,12 +6,12 @@ setup(width, height)
 tracer(0, 0)
 rand_turn = random.randint(0, 360)
 old_coord = (0, 0)
-amount = 30
+amount = 80
 penup()
 color("black")
 goto(-72,70)
 pendown()
-for i in range(5000):
+for i in range(4000):
     rand_turn = random.randint(0, 360)
     right(rand_turn)
     penup()
