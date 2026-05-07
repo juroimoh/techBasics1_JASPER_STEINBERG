@@ -16,7 +16,7 @@ old_coord = (0, 0)
 amount = 30 # Length of the lines (currently the length is randomized between 10 and 60).
 
 outline = 0 # Change to 1 if you want a box around the area (I have it off because I think it's ugly).
-extra = 1 # Change to 1 if you want to see my first art idea (a 3d cone) before I had this idea.
+extra = 0 # Change to 1 if you want to see my first art idea (a 3d cone) before I had this idea.
 
 colors = ["#FF1717","#D3151F","#C41333","#A01037","#870D52"]
 
