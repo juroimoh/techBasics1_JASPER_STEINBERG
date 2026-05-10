@@ -3,8 +3,8 @@ from turtle import *
 import random
 
 # setup
-width = 600
-height = 600
+width = 800
+height = 800
 setup(width, height)
 
 tracer(1000, 1) # Very fast speed.
@@ -14,8 +14,9 @@ rand_turn = random.randint(0, 360)
 old_coord = (0, 0)
 amount = 30 # Length of the lines (currently the length is randomized between 10 and 60).
 
-outline = 0 # Change to 1 if you want a box around the area (I have it off because I think it's ugly).
+outline = 0 # Change to 1 if you want a box around the main area (if you want that for some reason).
 extra = 0 # Change to 1 if you want to see my first art idea (a 3d cone) before I had this idea.
+nested = 1 # This was added later, after realizing we needed to add a nested loop. This adds dots around the screen!
 
 colors = ["#FF1717","#D3151F","#C41333","#A01037","#870D52"]
 
@@ -43,6 +44,37 @@ for i in range(5000):
         pendown()
         forward(amount)
         color(random.choice(colors)) # Random colors, delete to make all lines black.
+
+rand_coord_x = 0
+rand_coord_y = 0
+
+if nested == 1:
+    for i in range(8): # This whole part could probably somehow be cleaned up a bit.
+        penup()
+        rand_coord_x = random.randint(-350, 350)
+        rand_coord_y = random.randint(-350, 350)
+        goto(rand_coord_x, rand_coord_y)
+        while distance(0, 0) < 300:
+            rand_coord_x = random.randint(-350, 350)
+            rand_coord_y = random.randint(-350, 350)
+            goto(rand_coord_x, rand_coord_y)
+        goto(rand_coord_x, rand_coord_y)
+        pendown()
+        old_coord = pos()
+        for e in range(200):
+            rand_turn = random.randint(0, 360)
+            amount = random.randint(10, 40)
+            right(rand_turn)
+            penup()
+            old_coord = pos()
+            forward(amount)
+            if distance(rand_coord_x, rand_coord_y) > 30:
+                goto(*old_coord)
+            else:
+                goto(*old_coord)
+                pendown()
+                forward(amount)
+                color(random.choice(colors))
 
 if outline == 1:
     penup()
