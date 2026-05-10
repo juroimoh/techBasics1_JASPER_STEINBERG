@@ -23,7 +23,7 @@ colors = ["#FF1717","#D3151F","#C41333","#A01037","#870D52"]
 # art
 penup()
 color("black")
-goto(-72,70)
+goto(-72,70) # Starting point, in a location that feels random.
 pendown()
 
 for i in range(5000):
