@@ -5,7 +5,6 @@ import random
 # setup
 width = 600
 height = 600
-
 setup(width, height)
 
 tracer(1000, 1) # Very fast speed.
