@@ -89,7 +89,13 @@ hideturtle() # Used Gemini to find this setting.
 update()
 done()
 
-# The actual code for the main project is roughly ~30 lines, which is really cool (if you remove the random colors, line lengths, etc.).
-# Everything extra I don't like. I would prefer having the lines all be black, the same length, and nothing extra.
-# Everything else is added to show what I've discovered and tried, NOT what I find aesthetic.
+# The idea for this project I managed to execute exactly as I wanted, which I'm really happy about.
+# I'm really surprised I've been able to fit everything into such few lines, especially with the extra additions (random colors, line lengths, etc.).
+# Concerning the actual art, I am a much bigger fan of the simpler generative_art_simplified.py art, without the additions above (which was also the original idea).
+# The variables 'outline' and 'extra' can be toggled to view the other ideas I've tried, but I've kept them off by default to avoid clutter.
+
+# When condensing this project to my original plan, the code is only 32 lines (see generative_art_simplified.py).
+# I find the colors and extra features unecessary, but they show what I've tried and managed to accomplish.
+
+# This project was inspired by the generative cube art we looked at in class. I wanted to make something similar, where the art is actually computer generated and not just drawing instructions copied by a computer.
 # ദ്ദി◝ ⩊ ◜.ᐟ
