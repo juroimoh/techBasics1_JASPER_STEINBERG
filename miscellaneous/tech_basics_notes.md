@@ -215,3 +215,35 @@ Imported into **test.py** (text.py becomes the <ins>main</ins> function):
 `print(recursion(-7))`
 
 print(recursion(5)) would print `5`, then stop.
+
+### Notes from exercise:
+
+If there is no content inside a function yet, at least write pass to avoid error messages:
+`def my_function():`  
+`   pass`
+
+The following code gives an error:
+`def my_function():  `
+`    my_variable = 10  `   # A variable inside a function (local variable.  
+`    print("my_variable", my_variable)  `
+`print(my_variable)` # Attempt to call a variable which it cannot find, since it isn't global.
+
+To print the following:
+`****`  
+`****`  
+`****`
+The code segment would look like this:
+```
+def string_rect(string, w, h):
+    for i in range(h):
+        print(string * w)
+string_rect('*', 4, 3)
+```
+
+You can use `*argument` for a flexible number of arguments (or `**argument` for a flexible number of keyword arguments):
+`def show_classes(*classes):`  
+`    print("The first class is:", classes[0])`  
+`show_classes("Technical Basics I", "Technical Basics II")`
+
+This prints: `The first class is: Technical Basics I`.
+
