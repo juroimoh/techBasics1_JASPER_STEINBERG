@@ -119,7 +119,7 @@ took no notes (introduction to indexing, while and for loops, and turtle)
 
 - A function is a block of code which only runs when called.
 
-Built in to python:
+Built into python:
 `print(), len(), input()`  
 
 `def print_message():`  
