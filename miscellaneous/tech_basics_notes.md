@@ -1,6 +1,6 @@
 # Class Notes
 
-## 21/4/26 Notes
+## 21/04/26 Notes
 
 A **high-level programming language** is close to human speech (eg. Python).  
 A **low-level programming language** is closer to computer speech (eg. a = 010001).
@@ -100,5 +100,17 @@ A snippet of working code, determining prices for different ages:
 `        print("1 Discount Ticket")`  
 `else:`  
 `    print("Please enter a valid age!")`  
+
+## 28/04/26 Notes
+
+took no notes
+
+## 05/05/26 Notes
+
+took no notes
+
+## 12/05/26 Notes
+
+
 
 end of document.
