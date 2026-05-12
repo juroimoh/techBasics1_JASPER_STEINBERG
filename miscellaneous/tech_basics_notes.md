@@ -228,11 +228,11 @@ The following code gives an error:
 `    print("my_variable", my_variable)  `
 `print(my_variable)` # Attempt to call a variable which it cannot find, since it isn't global.
 
-To print the following:
+To print the following:  
 `****`  
 `****`  
 `****`
-The code segment would look like this:
+The code segment would look like this:  
 ```
 def string_rect(string, w, h):
     for i in range(h):
