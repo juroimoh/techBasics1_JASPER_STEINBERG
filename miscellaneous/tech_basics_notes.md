@@ -188,16 +188,28 @@ You should try to avoid global variables with larger projects (global variables 
 
 A function for **greet.py**:
 
-`def greet():`
-`   print("Hi!")`
+`def greet():`   
+`   print("Hi!")`   
 
-`def special_print(text):`
-`   print("***", text, "***")`
+`def special_print(text):`   
+`   print("***", text, "***")`   
 
-`if __name__ == "__main__":`
-`   greet()`
+`if __name__ == "__main__":`   
+`   greet()`   
 
 Imported into **test.py** (text.py becomes the <ins>main</ins> function):
 
-`import greet`
-`special_print("Hello")`
+`import greet`   
+`special_print("Hello")`   
+
+### Recursion
+
+When a function calls itself:
+
+`def recursion(x):`   
+`   if x <= 0:`   
+`      return x;`   
+`   recursion (x-1)`   
+`print(recursion(10))`   
+`print(recursion(0))`   
+`print(recursion(-7))`   
