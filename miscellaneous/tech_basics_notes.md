@@ -240,7 +240,7 @@ def string_rect(string, w, h):
 string_rect('*', 4, 3)
 ```
 
-You can use `*argument` for a flexible number of arguments (or `**argument` for a flexible number of keyword arguments):
+You can use `*argument` for a flexible number of arguments (or `**argument` for a flexible number of keyword arguments):  
 `def show_classes(*classes):`  
 `    print("The first class is:", classes[0])`  
 `show_classes("Technical Basics I", "Technical Basics II")`
