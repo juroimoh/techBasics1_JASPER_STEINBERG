@@ -304,9 +304,9 @@ my_dict = {
 
 ### Hash Table
 
-- The inner working mechanism of dictionary, a layer of encryption.
-`a9s7h4fs768d7fa876d4gd978df`
-Very confusing.
+- The inner working mechanism of dictionary, a layer of encryption.  
+`a9s7h4fs768d7fa876d4gd978df`  
+Very confusing.  
 
 ### Tuple
 
@@ -317,9 +317,9 @@ Tuple is less used than other data types.
 ### Set
 
 - A collection of different things.  
-`fruits = {"apple", "banana", "cherry", "tomato"}`
-`vegetables = {"potato", "cabbage", "tomato"}`
-Unordered, mutable and no duplicate variables.
+`fruits = {"apple", "banana", "cherry", "tomato"}`  
+`vegetables = {"potato", "cabbage", "tomato"}`  
+Unordered, mutable and no duplicate variables.  
 NOT `list()`.  
 
    🚨 insert huge comparison table here :p
