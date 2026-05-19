@@ -247,3 +247,58 @@ You can use `*argument` for a flexible number of arguments (or `**argument` for 
 
 This prints: `The first class is: Technical Basics I`.
 
+## 19/05/26 Notes
+
+### Lists
+
+- A collection of ordered, mutable, heterogenous elements.
+`my_list = ["apple", "banana", "cherry"]`
+Arrays are for homogenous elements.
+
+### Mutability
+
+- An object is considered mutable if its value can be changed after it has been created.  
+Mutable Data types: `list`, `set`, `dictionary`.  
+Immutable Data types: `int`, `float`, `bool`, `string`, `byte`, `tuple` (once a value has been set, its value cannot be changed).
+
+### Reference
+
+The value of a variable is actually not stored in the variable itself. What is stored in a variable is a **refrence**, information about the **location** in computer memory where the value can be found.  
+
+`my_list = [1,2,3]`  
+my_list   -->   [1] [2] [3] (in memory)  
+
+In the following code:
+
+```
+a = [1, 2, 3]
+b = a
+b[0] = 10
+```
+
+Then the memory for BOTH A and B becomes `[10] [2] [3]`.  
+`a[0]` is also `10`.  
+If we don't want this, and only want to copy the value, we use `copy` (idk how).
+
+### Dctionary
+
+- A collection of data stored as `key:value` pairs.
+
+```
+my_dict = {
+   "name": "Lily Mustermann",
+   "major": "Digital Media",
+   "semester": 2,
+   "exchange_student": False
+}
+```
+
+insert dictionary table of tools thing here :p
+
+**Usage of Dictionaries:**
+- Structured data: user profiles, mapping csv...
+- Lookup tables: ISO codes & values...
+- Storing settings
+- Counting frequency
+- Passing keyword arguments for functions
+
