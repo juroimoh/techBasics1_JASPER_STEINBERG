@@ -280,7 +280,7 @@ Then the memory for BOTH A and B becomes `[10] [2] [3]`.
 `a[0]` is also `10`.  
 If we don't want this, and only want to copy the value, we use `copy` (idk how).
 
-### Dctionary
+### Dictionary
 
 - A collection of data stored as `key:value` pairs.
 
@@ -293,7 +293,7 @@ my_dict = {
 }
 ```
 
-insert dictionary table of tools thing here :p
+   🚨 insert dictionary table of tool methods thing here :p
 
 **Usage of Dictionaries:**
 - Structured data: user profiles, mapping csv...
@@ -301,4 +301,26 @@ insert dictionary table of tools thing here :p
 - Storing settings
 - Counting frequency
 - Passing keyword arguments for functions
+
+### Hash Table
+
+- The inner working mechanism of dictionary, a layer of encryption.
+`a9s7h4fs768d7fa876d4gd978df`
+Very confusing.
+
+### Tuple
+
+- A collection which is orered, immutable (cannot be dynamically changed, e.g. adding numbers inbetween others) an allow duplicate values.  
+`point= (3,7)`  
+Tuple is less used than other data types.
+
+### Set
+
+- A collection of different things.  
+`fruits = {"apple", "banana", "cherry", "tomato"}`
+`vegetables = {"potato", "cabbage", "tomato"}`
+Unordered, mutable and no duplicate variables.
+NOT `list()`.  
+
+   🚨 insert huge comparison table here :p
 
