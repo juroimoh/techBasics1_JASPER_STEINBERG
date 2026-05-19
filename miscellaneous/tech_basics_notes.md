@@ -324,3 +324,28 @@ NOT `list()`.
 
    🚨 insert huge comparison table here :p
 
+### Solution to Task 3
+
+This is the code for the 3rd task:
+```
+import re
+
+def word_counter(corpus:str):
+    wordcount = {} # (an empty dictionary)
+    # Removes all special characters:
+    corpus = re.sub('\\W+',' ', corpus)
+    # Split the string into a list of words:
+    words = corpus.split()
+    # Look through the list:
+    for word in words:
+        word = word.lower() # (make lowercase)
+        if word in wordcount:
+            wordcount[word] += 1
+        else:
+            wordcount[word] = 1
+    return wordcount
+
+test_input = "This is a sentence that needs to be counted. Is the sentence long enough?"
+print(word_counter(test_input))
+```
+Very confusing aaaaa
