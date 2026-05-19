@@ -278,7 +278,7 @@ b[0] = 10
 
 Then the memory for BOTH A and B becomes `[10] [2] [3]`.  
 `a[0]` is also `10`.  
-If we don't want this, and only want to copy the value, we use `copy` (idk how).
+If we don't want this, and only want to copy the value, we use `copy` (`list2 = list1.copy()`).  
 
 ### Dictionary
 
