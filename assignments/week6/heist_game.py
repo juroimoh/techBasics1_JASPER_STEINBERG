@@ -1013,6 +1013,6 @@ if __name__ == "__main__":
     game_loop()
 
 # Overall I am very happy with this game, and I think the puzzle of inventory management actually requires you to think (although it still is pretty straight forward).
-# I think visuals add a lot to a game, and this especially.
+# I think visuals add a lot to text-based games, this one especially.
 # There is a lot to improve though, this could probably be reduced a lot with the redundant checks.
 # ദ്ദി◝ ⩊ ◜.ᐟ
