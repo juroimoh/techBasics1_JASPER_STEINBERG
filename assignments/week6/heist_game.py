@@ -949,7 +949,7 @@ def game_loop():
           "│ Doors are represented with a ╌╌. There might be a way to open them. │ \n"
           "┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙ \n"
           "\n"
-          "Type 'help' and 'map' to get started."
+          "Type 'help' and 'map' to get started. \n"
           "Good luck!")
 
     while True:
