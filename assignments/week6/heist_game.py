@@ -1,6 +1,6 @@
-# IDEA
+# SOLUTION | DON'T READ FOR SPOILERS
 # You look around the rooms and find loot.
-# You can carry loot which you need to create a key (using gloves for nails).
+# You use the battery to power the machine, and gloves to pickup nails, before crafting a key and picking up the fake money that you dropped.
 # You use a key you craft to get into the safe room, replacing the money with fake money, before escaping.
 
 # SETUP
