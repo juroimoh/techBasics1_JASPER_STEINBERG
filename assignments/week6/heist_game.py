@@ -140,7 +140,7 @@ def player_move():
 def show_map():
       print(f"      ┌───────┐      \n"
             f"      │   {player_north_north} {north_top} │      \n"
-            f"      ├──╌╌╌──┤      \n"
+            f"      ├──┄┄┄──┤      \n"
             f" ┌───┐┕━━┑{player_north}┍━━┙      \n"
             f" │ {west_top} └─┐ │ │ ┌─────┐ \n"
             f" │     ├─┘ └─┤{east_top}    │ \n"
@@ -150,7 +150,7 @@ def show_map():
             f"      ┌──┘ └──┐      \n"
             f"      │   {player_south}  {south_right}│      \n"
             f"      │{south_left}      │      \n"
-            f"      ┕━━╍╍╍━━┙      \n")
+            f"      ┕━━┅┅┅━━┙      \n")
 
 def open_inventory():
     if len(inventory) == 0:
@@ -946,7 +946,7 @@ def game_loop():
           "│ INFORMATION:                                                        │ \n"
           "│ Type 'help' to open a list of commands.                             │ \n"
           "│ You already have something in your inventory. Check it out!         │ \n"
-          "│ Doors are represented with a ╌╌. There might be a way to open them. │ \n"
+          "│ Doors are represented with a ┄┄. There might be a way to open them. │ \n"
           "┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙ \n"
           "\n"
           "Type 'help' and 'map' to get started. \n"
