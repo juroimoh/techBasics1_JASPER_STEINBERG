@@ -796,7 +796,7 @@ def use(item):
                 return
         elif item == "battery":
             if not machine_on:
-                print("You power the machine with the battery. You no longer have a battery")
+                print("You power the machine with the battery. You no longer have a battery.")
                 machine_on = True
                 inventory.remove(held_item)
                 return
