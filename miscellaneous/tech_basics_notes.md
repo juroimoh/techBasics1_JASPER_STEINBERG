@@ -349,3 +349,41 @@ test_input = "This is a sentence that needs to be counted. Is the sentence long 
 print(word_counter(test_input))
 ```
 Very confusing aaaaa
+
+## 26/05/26 Notes
+
+### Categories of Errors
+
+1. **Syntax Errors**: Missing colon `:`, missing quotation mark at the end of a string `print("Hello world)`.  
+2. **Indentaiton Errors**: When the coe's spacing is not consistent.  
+3. **Runtime Errors/Exceptions**: Only happen in specific marginal cases, and they halt the program after it runs.
+
+Exceptions:
+It is possible to handle Exceptions so that the execution continues despite them occuring:
+
+```
+try:
+   age = int(input("Please enter your age: "))
+except:
+   print("Something went wrong.")
+else:
+   print("Nothing went wrong.")
+```
+
+Typical Runtime Errors:
+1. `ValueError`: When the argument passed to a function is somehow invalid (`float("1,23")`).
+2. `TypeError`: When the value is of the wrong type (`len(10)`).
+3. `InexError`: When trying to refer to an index which doesn't exist (`list[5]`).
+4. `ZeroivisionError`: When trying to divide by zero (`sum(my_list / len(my_list)`).
+Of these, Value and Type errors are the most common.
+
+Raising Exceptions:
+```
+def age(x):
+   if type(x) is not int:
+      raise TypeError("Only integers are allowed.")
+   if x < 0: # Or a ValueError
+      raise Exception("Sorry, the age needs to be greater than zero.")
+   return x
+```
+
