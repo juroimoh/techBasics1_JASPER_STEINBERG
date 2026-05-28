@@ -843,7 +843,7 @@ def use(item): # This has been updated, the last version accidentally searched i
                               "┕━━━━━━━━━┙ \n"
                               "\n"
                               "Thank you for playing! \n"
-                              "Save your score to the local leaderboard by typing 'save score'! \n"
+                              "Save your score to the local scoreboard by typing 'save score'! \n"
                               "Play again by typing 'restart'.")
                         return
                     else:
@@ -980,7 +980,7 @@ def load_scores():
             writer.writeheader()
             for i in range(5):
                 writer.writerow({"Time": "9999", "Name": "N/A"})
-            return [{"Time": "9999", "Name": "Empty"} for _ in range(5)] # This returns the scoreboard values if no scoreboard exists yet.
+            return [{"Time": "9999", "Name": "N/A"} for _ in range(5)] # This returns the scoreboard values if no scoreboard exists yet.
     with open("heist_scoreboard.csv", "r") as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -1013,7 +1013,7 @@ def save_score():
             writer.writerows(rows)
         scoreboard()
     else:
-        print(f"Your time of {final_time} seconds was not fast enough to get on the leaderboard! Type 'scoreboard' to see all scores.")
+        print(f"Your time of {final_time} seconds was not fast enough to get on the scoreboard! Type 'scoreboard' to see all scores.")
 
 def scoreboard(): # Here I think I could use load_scores(), but wanted to try using the except error.
     try:
