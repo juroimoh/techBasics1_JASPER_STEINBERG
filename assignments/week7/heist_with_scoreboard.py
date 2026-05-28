@@ -11,7 +11,7 @@ import csv
 
 # -----
 DEBUG = True
-# Use 'debug' to toggle between modes! This command resets all progress.
+# Use 'debug' to toggle between modes! Using this command resets all progress.
 # -----
 
 escaping = False
