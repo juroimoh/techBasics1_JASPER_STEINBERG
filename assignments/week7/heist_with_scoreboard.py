@@ -8,30 +8,17 @@
 # You use a key you craft to get into the safe room, searching the room, replacing the money with fake money.
 # You then escape with the money using the key in the southern room.
 
-# SETUP
-
 import time
 import os
 import csv
 
-# -----
 DEBUG = True
 # Use 'debug' to toggle between modes! Using this command resets all progress.
-# -----
 
 escaping = False
 start_time = 0
 end_time = 0
 final_time = 0
-
-def are_you_escaping():
-    global escaping, start_time
-    if not escaping:
-        escaping = True
-        if DEBUG:
-            start_time = time.time() - 800
-        else:
-            start_time = time.time()
 
 inventory = [
     {"name": "Fake Money", "type": "Valuable", "description": "Can fool anyone as real money. Should be used."}
@@ -89,8 +76,6 @@ failed = False
 
 direction = {"north", "east", "south", "west", "up", "right", "down", "left"}
 INVENTORY_SIZE = 3
-
-# FUNCTIONS
 
 def player_move():
     global player_north, player_north_north, player_east, player_south, player_west, player_middle
@@ -976,6 +961,15 @@ def shortcut_names(typed_name):
     }
     return shortcuts.get(typed_name.lower(), typed_name)
 
+def are_you_escaping():
+    global escaping, start_time
+    if not escaping:
+        escaping = True
+        if DEBUG:
+            start_time = time.time() - 800
+        else:
+            start_time = time.time()
+
 def load_scores():
     rows = []
     fieldnames = ["Time", "Name"]
@@ -1065,13 +1059,13 @@ def game_loop():
               "Good luck! \n"
               "The timer begins the second you enter your first command. \n"
               "\n"
-              "-----\n"
-              "WARNING! DEBUG MODE IS ENABLED! \n"
-              "To complete the game in DEBUG MODE, simply leave the building (you already have the money). \n"
-              "To do this, type 'go south' and then 'use key'. \n"
-              "Debug mode automatically adds 800 seconds to any run, to prevent faked runs. \n"
-              "To toggle DEBUG MODE on and off, type 'debug'. This resets all progress and acts as 'reset'. \n"
-              "-----")
+              "┌──────────────────────────────────────────────────────────────────────────────────────────────┐ \n"
+              "│ WARNING! DEBUG MODE IS ENABLED!                                                              │ \n"
+              "│ To complete the game in DEBUG MODE, simply leave the building (you already have the money).  │ \n"
+              "│ To do this, type 'go south' and then 'use key'.                                              │ \n"
+              "│ Debug mode automatically adds 800 seconds to any run, to prevent faked runs.                 │ \n"
+              "│ To toggle DEBUG MODE on and off, type 'debug'. This resets all progress and acts as 'reset'. │ \n"
+              "┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙")
 
     if not DEBUG:
         print("Welcome player! You have been contracted to steal money from an unmarked building. \n"
