@@ -790,6 +790,9 @@ def use(item): # This has been updated, the last version accidentally searched i
                # so players could use items without having them in their inventory.
     held_item = None
     global player_south, player_west, player_north, player_north_north
+    if item == "machine":
+        held_item = {"name": "Machine"} # Because the item is now looked for in the inventory, using the machine won't work.
+                                        # This temporarily tricks the function into thinking you have the machine in your inventory.
     for item_dict in inventory:
         if item_dict["name"].lower() == item:
             held_item = item_dict
@@ -1182,3 +1185,5 @@ if __name__ == "__main__":
 # For this weeks task I did need to consult with Gemini a lot, and needed help coming up with the logic for the scoreboard.
 # But everything should work properly, and I am happy with how the scoreboard works.
 # There shouldn't be any bugs, and saving a score should only work when you successfully escaped.
+# My best time is 40 seconds.
+# ദ്ദി◝ ⩊ ◜.ᐟ
