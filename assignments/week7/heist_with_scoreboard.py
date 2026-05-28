@@ -1178,3 +1178,7 @@ def game_loop():
 
 if __name__ == "__main__":
     game_loop()
+
+# For this weeks task I did need to consult with Gemini a lot, and needed help coming up with the logic for the scoreboard.
+# But everything should work properly, and I am happy with how the scoreboard works.
+# There shouldn't be any bugs, and saving a score should only work when you successfully escaped.
