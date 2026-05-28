@@ -1,9 +1,12 @@
 # Comments throughout, final comments at the bottom.
 
 # SOLUTION | DON'T READ FOR SPOILERS
-# You look around the rooms and find loot.
-# You use the battery to power the machine, and gloves to pickup nails, before crafting a key and picking up the fake money that you dropped.
-# You use a key you craft to get into the safe room, replacing the money with fake money, before escaping.
+# You move around and search each room to find loot.
+# You drop the fake money to pickup later since you don't have much inventory space.
+# You use the battery to power the machine, and gloves to pickup nails, before crafting a key.
+# You pickup the fake money again.
+# You use a key you craft to get into the safe room, searching the room, replacing the money with fake money.
+# You then escape with the money using the key in the southern room.
 
 # SETUP
 
