@@ -966,7 +966,7 @@ def are_you_escaping():
     if not escaping:
         escaping = True
         if DEBUG:
-            start_time = time.time() - 800
+            start_time = time.time() - 8000
         else:
             start_time = time.time()
 
@@ -1040,7 +1040,7 @@ def game_loop():
     if DEBUG:
         global north_top, start_time, inventory
         north_top = "F"
-        start_time = time.time() - 800
+        start_time = time.time() - 8000
         inventory.append({"name": "Money", "type": "Valuable", "description": "Obtained very legally."})
         inventory.remove({"name": "Fake Money", "type": "Valuable", "description": "Can fool anyone as real money. Should be used."})
         inventory.append({"name": "Key", "type": "Valuable", "description": "Used to open doors."})
@@ -1063,7 +1063,7 @@ def game_loop():
               "│ WARNING! DEBUG MODE IS ENABLED!                                                              │ \n"
               "│ To complete the game in DEBUG MODE, simply leave the building (you already have the money).  │ \n"
               "│ To do this, type 'go south' and then 'use key'.                                              │ \n"
-              "│ Debug mode automatically adds 800 seconds to any run, to prevent faked runs.                 │ \n"
+              "│ Debug mode automatically adds 8000 seconds to any run, to prevent faked runs.                │ \n"
               "│ To toggle DEBUG MODE on and off, type 'debug'. This resets all progress and acts as 'reset'. │ \n"
               "┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙")
 
