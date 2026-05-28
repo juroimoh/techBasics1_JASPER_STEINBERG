@@ -1,3 +1,5 @@
+# Comments throughout, final comments at the bottom.
+
 # SOLUTION | DON'T READ FOR SPOILERS
 # You look around the rooms and find loot.
 # You use the battery to power the machine, and gloves to pickup nails, before crafting a key and picking up the fake money that you dropped.
