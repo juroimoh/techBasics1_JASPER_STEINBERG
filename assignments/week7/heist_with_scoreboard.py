@@ -1,4 +1,4 @@
-# Comments throughout, final comments at the bottom.
+# Comments spread throughout, with final comments at the bottom.
 
 # SOLUTION | DON'T READ FOR SPOILERS
 # You move around and search each room to find loot.
