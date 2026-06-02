@@ -436,6 +436,15 @@ torch.use()
 ```
 
 <ins>Terminologies</ins>  
-| Standalone | Associated with an object/class |
+**| Standalone | Associated with an object/class |**
 | Functions | idk |
 | Variables | idk |
+
+```
+class SampleClass:
+   def __init__():
+      pass # constructor method
+   def __str__():
+      pass # override the default printing method
+```
+
