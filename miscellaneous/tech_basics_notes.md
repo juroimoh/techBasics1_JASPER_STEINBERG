@@ -358,7 +358,7 @@ Very confusing aaaaa
 2. **Indentaiton Errors**: When the coe's spacing is not consistent.  
 3. **Runtime Errors/Exceptions**: Only happen in specific marginal cases, and they halt the program after it runs.
 
-Exceptions:
+Exceptions:  
 It is possible to handle Exceptions so that the execution continues despite them occuring:
 
 ```
@@ -387,3 +387,55 @@ def age(x):
    return x
 ```
 
+## 02/06/26 Notes
+
+### Procedural Programming
+idk
+
+### Object-Oriented Programming
+A programming paradigm that organizes software design around data, or objects, rather than functions and logic  
+- It binds certain data and functions in a structured way (similar to a dictionary)  
+- Efficient, less code
+
+### Classes
+A class is the blueprint of an object
+
+```
+class Item:
+
+   # constructor
+   def __init__(self, name, category,description):
+      # attributes
+      self.name = name
+      # 'type' is not used because it is a reserved keyword in python
+      self.category = category
+      self.description = description
+      self.used = False # default values
+
+   # method
+   def use(self):
+      # it does something deoending on the type
+      self.used = True
+```
+
+Dictionaries, lists, and strings are pre-defined classes in Python.  
+`my_list = [1,2,3]`  
+`my_list.append()`  
+When you create a list, you are creting an object/instance from the class `list`.
+
+### Classes
+Classes are usually named in `camel case`. That means that all the words in the class name are written together without spaces, and each word is capitalized (`BankAccount`, `LibraryCard` etc.)
+
+### Object
+An object is an instance of a class. We can have many objects from the same class. Changing one object won't influence other objects of the same class.
+
+```
+torch = Item("torch","tool","Lights up dark places.")
+key = Item("key","tool","Opens a locke door.")
+torch.use()
+```
+
+<ins>Terminologies</ins>  
+| Standalone | Associated with an object/class |
+| Functions | idk |
+| Variables | idk |
