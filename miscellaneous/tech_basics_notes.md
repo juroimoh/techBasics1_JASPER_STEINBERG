@@ -448,3 +448,81 @@ class SampleClass:
       pass # override the default printing method
 ```
 
+Jupyter Notebook Exercise: (optimized code + my attempt)
+```
+class MensaCard:
+    def __init__(self, name:str, balance:float):
+        self.name = name
+        self.balance = float(balance)
+
+    def __str__(self):
+        return f"{self.name}'s balance is {self.balance} euros."
+
+    def eat_lunch(self, option:str):
+        meal = 0
+        if option == "A":
+            meal = 2.3
+        if option == "B":
+            meal = 3.8
+            
+        if self.balance < meal:
+            print("Low balance, please charge your card.")
+            return False
+        else:
+            print(f"{self.name} eats lunch Option {option}. Balance is now {self.balance} euros.")
+            
+            return True
+
+    def deposit_money(self, amount):
+        if amount < 0:
+            raise ValueError("Please don't deposit a negative number.")
+        else:
+            self.balance += amount
+            print(f"{amount} euros has been added to {self.name}'s account. Balance is now {self.balance} euros.")
+
+card1 = MensaCard("Lisa", 20)
+card1.eat_lunch("B")
+card1.eat_lunch("A")
+print(card1)
+
+#MY ATTEMPT:
+#class MensaCard:
+#    def __init__(self, name:str, balance:float):
+#        self.name = name
+#        self.balance = float(balance)
+#
+#    def __str__(self):
+#        return f"{self.name}'s balance is {self.balance} euros."
+#    def eat_lunch(self, choice:str):
+#        if choice == "A" or choice == "B":
+#            if choice == "A":
+#                if self.balance >= 2.3:
+#                    self.balance -= 2.3
+#                    print(f"{self.name} eats lunch Option A for 2.3 Euros.")
+#                    return True
+#                else:
+#                    print(f"{self.name} cannot afford meal Option A.")
+#                    return False
+#            elif choice == "B":
+#                if self.balance >= 3.8:
+#                    self.balance -= 3.8
+#                    print(f"{self.name} eats lunch Option B for 3.8 Euros.")
+#                    return True
+#                else:
+#                    print(f"{self.name} cannot afford meal Option B.")
+#                    return False
+#        else:
+#            return f"Invalid meal option (A or B)."
+#
+#   def deposit_amount(self, amount:float):
+#    if amount > 0:
+#        self.balance += amount
+#        print(f"You added {amount} euros to {self.name}'s Card.")
+#    else:
+#        print("You must input an amount greater than 0.")
+#
+#card = MensaCard("Jasper", 2)
+#card.eat_lunch("B")
+#deposit_amount(card, 10)
+#print(card)
+```
