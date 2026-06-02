@@ -436,7 +436,8 @@ torch.use()
 ```
 
 <ins>Terminologies</ins>  
-**| Standalone | Associated with an object/class |**
+| Standalone | Associated with an object/class |
+| --- | --- |
 | Functions | idk |
 | Variables | idk |
 
