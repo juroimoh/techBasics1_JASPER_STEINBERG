@@ -1,6 +1,7 @@
 # The whole idea was to create confetti using a small .png as the base.
 # Gemini suggested the initial movement tech, using velocities and a 'gravity' variable to define the speed.
 # Gemini also coded the rotate logic and anything else with comments.
+# A lot of the code and the main framework was taken from what we did in class.
 
 import pygame
 import random
