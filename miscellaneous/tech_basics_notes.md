@@ -458,7 +458,7 @@ class SampleClass:
       pass # override the default printing method
 ```
 
-Jupyter Notebook Exercise: (optimized code + my attempt)
+Optimized Jupyter Notebook Exercise:
 ```
 class MensaCard:
     def __init__(self, name:str, balance:float):
@@ -494,8 +494,10 @@ card1 = MensaCard("Lisa", 20)
 card1.eat_lunch("B")
 card1.eat_lunch("A")
 print(card1)
+```
 
-#MY ATTEMPT:
+My attempt at the same code (from Jupyter Notebook):
+```
 #class MensaCard:
 #    def __init__(self, name:str, balance:float):
 #        self.name = name
@@ -536,3 +538,46 @@ print(card1)
 #deposit_amount(card, 10)
 #print(card)
 ```
+
+## 09/06/26 Notes
+🚨 NOT REQUIRED FOR THE EXAM 🚨
+
+### Mutability PART 2
+Mutability allows you to create a list `[]` of objects and update each one individually.  
+
+### Encapsulation
+A common feature in object-oriented programming languges: classes can usually hide some of their attributes from the outside.  
+- If you don't want attibutes to be edited.
+Hidden attributes are usually called `private`. In Python this is achieved by adding two underscores `__` to the beginning ofthe attribute name.
+
+Example with Setters and Getters:
+```
+class Cola:
+      # below the attribute ingredients is private, while the attribute name is accesible
+   def __init__(self, ingredients: list, name: str):
+      self.__ingredients == ingredients
+      self.name = name
+
+   def get_ingredients(self):   # getting a private attribute
+      return self.__ingredients
+
+   def set_ingredients(self, ingredients:list):
+         # below we can add more constrains here to protect the ingredients attribute
+      self.__ingredients = ingredients # setting a private attribute
+```
+
+### Inheritance
+
+Inheritance allows us to define a class that inherits all the methods and properties of IDK
+
+### Protected Attibutes
+Protected Attributes are accessible tosubclasses but not to outside. In Python this is achieved by adding one underscore `_` to the beginning ofthe attribute name.
+
+<ins>Terminologies</ins>  
+| Access Modifier | Example | Visible to Client | Visible to Derived Class |
+| --- | --- | --- | --- |
+| Public | self.name | yes | yes |
+| Protected | self._name | no | yes |
+| Private | self.__name | no | no |
+
+double check graph above
