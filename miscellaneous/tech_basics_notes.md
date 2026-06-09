@@ -12,16 +12,16 @@ A **low-level programming language** is closer to computer speech (eg. a = 01000
 ### Programming Terminology
 
 1. Statement
-   - A statement performs actions (eg. `print("hello") , if x == 1`).
+   - A statement performs actions (eg. `print("hello") , if x == 1`).  
 2. Expression
-   - Expression → Evaluation → Value (eg. `123 , 1+2+3+4 , n == 3`).
+   - Expression → Evaluation → Value (eg. `123 , 1+2+3+4 , n == 3`).  
 4. Variables
-   - A variable name should begin with a letter, and it can only contain letters, numbers and underscores.
-Lowercase and uppercase letters are different characters. `word` , `Word` and `WORD` are three different variables.
-It is a common practice in Python to use only lowercase characters in variable names. For multiple words, use an underscore between the words (eg. `family_name`).
+   - A variable name should begin with a letter, and it can only contain letters, numbers and underscores.  
+Lowercase and uppercase letters are different characters. `word` , `Word` and `WORD` are three different variables.  
+It is a common practice in Python to use only lowercase characters in variable names. For multiple words, use an underscore between the words (eg. `family_name`).  
      - A piece of memory that stores a value that can be changed (eg. `x = 1`).
 
-`x = 1` is not the same as `x == 1`. == represents a conditional check "if x is equal to one".
+`x = 1` is not the same as `x == 1`. `==` represents a conditional check "if x equals one".
 
 ### Different Variables
 
