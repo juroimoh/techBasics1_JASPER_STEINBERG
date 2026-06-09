@@ -82,7 +82,7 @@ Includes arithmetic operators, assignment operators, comparison operators, logic
 Combine multiple conditions with: `and` , `or` and `not` (eg. `if a > b and a < c`).
 
 <ins>Identity Operators</ins>  
-Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location (eg. `a is b , a is not b`).  
+Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location (eg. `a is b`, `a is not b`).  
 <sup>*Note it is **not** the same as `a == b`.</sup>
 
 <ins>Truth Table</ins>  
