@@ -45,7 +45,7 @@ else:
 Keep in mind, the if, elif and else executes whatever is after the colon `:`.
 
 ### Python Operators
-Operators are used to perform operations on variables and values.
+Operators are used to perform operations on variables and values.  
 Includes arithmetic operators, assignment operators, comparison operators, logical operators, identity operators etc.
 
 <ins>Arithmetic Operators</ins>  
@@ -58,6 +58,15 @@ Includes arithmetic operators, assignment operators, comparison operators, logic
 | % | Modulus | x % y |
 | ** | Exponential | x ** y |
 | // | Floor Division | x // y |
+
+<ins>Assignment Operators</ins>  
+| Operator | Example | Same As |
+| --- | --- | --- |
+| = | x = 5 | x = 5 |
+| += | x += 3 | x = x + 5 |
+| -= | x -= 3 | x = x - 3 |
+| /= | x /= 3 | x = x / 3 |
+(there are more assignment operators, but none we have used in class.)
 
 <ins>Comparison Operators</ins>  
 | Operator | Name | Example |
