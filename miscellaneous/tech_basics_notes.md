@@ -164,7 +164,7 @@ This would return `empl`, see Index above. Keep in mind the out value isn't incl
 - List is a sequence of heterogenous items
 - New lists can be created with bracket notation
 
-ADD MORE HERE JASPER
+ADD MORE HERE ME
 
 ##  12/05/26 Notes
 
