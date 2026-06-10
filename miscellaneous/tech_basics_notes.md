@@ -153,7 +153,20 @@ Assuming that `string = "Exemplary"`, the index is as follows:
 
 These can be accessed wwith `string[2]` (which would return `e`).
 
-## 12/05/26 Notes
+You can also create Substrings, also known as Slicing.
+
+`sub_string[begin : end]`  
+`string = "Exemplary"`  
+`sub_string = string[2:6]`
+This would return `empl`, see Index above. Keep in mind the out value isn't included (6, or `a`).
+
+### Lists
+- List is a sequence of heterogenous items
+- New lists can be created with bracket notation
+
+ADD MORE HERE JASPER
+
+##  12/05/26 Notes
 
 ### Functions
 - A function is a block of code which only runs when called.
