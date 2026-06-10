@@ -148,8 +148,10 @@ Assuming that `string = "Exemplary"`, the index is as follows:
 
 <ins>Index</ins>  
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | E | x | e | m | p | l | a | r | y |
+
+These can be accessed wwith `string[2]` (which would return `e`).
 
 ## 12/05/26 Notes
 
