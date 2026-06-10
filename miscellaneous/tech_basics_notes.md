@@ -1,10 +1,10 @@
 # Class Notes
 
-## 14/04/26 Notes
+## 14/04/26 Notes /week 1
 
 took no notes (intro to github and pycharm)
 
-## 21/04/26 Notes
+## 21/04/26 Notes /week 2
 
 A **high-level programming language** is close to human speech (eg. Python).  
 A **low-level programming language** is closer to computer speech (eg. a = 010001).
@@ -114,18 +114,46 @@ A snippet of working code, determining prices for different ages:
 `else:`  
 `    print("Please enter a valid age!")`
 
-## 28/04/26 Notes
+## 28/04/26 Notes /week 3
 
 trip to google
 
-## 05/05/26 Notes
+## 05/05/26 Notes /week 4
 
-took no notes (introduction to indexing, while and for loops, and turtle)
+### While Loop
+- Executes a set of statements as long as **a condition** is true / is met.
+`while <statement>:`  
+`   <block>`  
+An example:
+`n = 0`
+`while n < 5:`
+`   n += 1`
+`   print(n)`
+
+### For Loop
+- Interates over a sequence.
+Can be either a list, a tuple, a dictionary, a set or a string.
+
+`for <variable> in <collection>:`  
+`   <block>`
+An example:
+`for x in range(6):`  
+`   print(x)`
+
+Using a `break` statement exits any code in a `for` or `while` loop.
+
+### String Indexing
+
+Assuming that `string = "Exemplary"`, the index is as follows:
+
+<ins>Index</ins>  
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| E | x | e | m | p | l | a | r | y |
 
 ## 12/05/26 Notes
 
 ### Functions
-
 - A function is a block of code which only runs when called.
 
 Built into python:
