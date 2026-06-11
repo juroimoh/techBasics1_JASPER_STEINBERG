@@ -152,6 +152,7 @@ Can be either a list, a tuple, a dictionary, a set or a string.
 
 `for <variable> in <collection>:`  
 `   <block>`  
+
 An example:  
 `for x in range(6):`  
 `   print(x)`
