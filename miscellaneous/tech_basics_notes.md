@@ -144,6 +144,7 @@ trip to google
 
 `while <statement>:`  
 `   <block>`  
+
 An example:  
 `n = 0`  
 `while n < 5:`  
