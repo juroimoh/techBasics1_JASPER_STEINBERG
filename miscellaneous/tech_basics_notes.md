@@ -2,11 +2,11 @@
 
 # Class Notes
 
-## 14/04/26 Notes /week 1
+## 14/04/26 Notes (week 1)
 
 took no notes (intro to github and pycharm)
 
-## 21/04/26 Notes /week 2
+## 21/04/26 Notes (week 2)
 
 A **high-level programming language** is close to human speech (eg. Python).  
 A **low-level programming language** is closer to computer speech (eg. a = 010001).
@@ -116,11 +116,11 @@ A snippet of working code, determining prices for different ages:
 `else:`  
 `    print("Please enter a valid age!")`
 
-## 28/04/26 Notes /week 3
+## 28/04/26 Notes (week 3)
 
 trip to google
 
-## 05/05/26 Notes /week 4
+## 05/05/26 Notes (week 4)
 
 ### While Loop
 - Executes a set of statements as long as **a condition** is true / is met.
@@ -190,16 +190,14 @@ Slice: `sub_list = my_int_list = [:3]` (1, 3, 5)
 | reverse() | Reverses the order of the list |
 | sort() | Sorts the list |
 
-Python also has some **built in** functions, like `len()`, `sorted()`, `print()`, `input()` and more.
-
-##  12/05/26 Notes
+##  12/05/26 Notes (week5)
 
 ### Functions
 - A function is a block of code which only runs when called.
 
-Built into python:
-`print(), len(), input()`  
+Python has some **built in** functions, like `len()`, `sorted()`, `print()`, `input()` etc.
 
+A simple function:
 `def print_message():`  
    `print("This is my own function!")`  
 `print_message()`
@@ -237,9 +235,9 @@ You can pass arguments into a function:
 `      print(message)`  
 `debug("This message will only be printed if DEBUG is true.")`
 
-Why uppercase DEBUG?
-Values that won't be changed after initial definition are called **Constants**.
-These are commonly written in uppercase.
+Why uppercase DEBUG?  
+Values that won't be changed after initial definition are called **Constants**.  
+These are commonly written in uppercase.  
 `PI = 3.1415926`  
 `URL = "https://api.example.com"` 
 `API_TOKEN = 7034982315`
@@ -250,8 +248,15 @@ These are commonly written in uppercase.
 `   my_variable = 10`   # Variable is defined <ins>inside</ins> a function.  
 `   print(my_variable)`
 
-Global variables are fine for short, simple programs.
+Global variables are fine for short, simple programs.  
 You should try to avoid global variables with larger projects (global variables work across files, so if you have a global variable defined in **file_a** and you are in **file_b**, you cannot create two global variables with the same name, and they take up a lot of memory).
+
+<ins>Comparison</ins>  
+| Item | Global Variables | Local Variables |
+| --- | --- | --- |
+| Definition | Declared outside the functions | Declared within the functions |
+| Scope | Can be accessed throughout the code | Can only be accessed inside the function |
+| Value | Once the value changes it is reflected throughout the code | Once changed the variable doesn't affect other functions of the program |
 
 ### Functions inside a Function
 
@@ -294,7 +299,7 @@ Imported into **test.py** (text.py becomes the <ins>main</ins> function):
 
 print(recursion(5)) would print `5`, then stop.
 
-### Notes from exercise:
+### (some) Notes from jupyter exercise:
 
 If there is no content inside a function yet, at least write pass to avoid error messages:  
 `def my_function():`  
@@ -302,7 +307,7 @@ If there is no content inside a function yet, at least write pass to avoid error
 
 The following code gives an error:  
 `def my_function():`  
-`    my_variable = 10`   # A variable inside a function (local variable.  
+`    my_variable = 10`   # A variable inside a function (local variable).  
 `    print("my_variable", my_variable)`  
 `print(my_variable)`   # Attempt to call a variable which it cannot find, since it isn't global.  
 
@@ -325,13 +330,14 @@ You can use `*argument` for a flexible number of arguments (or `**argument` for 
 
 This prints: `The first class is: Technical Basics I`.
 
-## 19/05/26 Notes
+## 19/05/26 Notes (week 6)
 
 ### Lists
+(covered a bit before)
 
 - A collection of ordered, mutable, heterogenous elements.
 `my_list = ["apple", "banana", "cherry"]`
-Arrays are for homogenous elements.
+Arrays are for homogenous elements, with no built-in support in Python.
 
 ### Mutability
 
@@ -347,13 +353,11 @@ The value of a variable is actually not stored in the variable itself. What is s
 my_list   -->   [1] [2] [3] (in memory)  
 
 In the following code:
-
 ```
 a = [1, 2, 3]
 b = a
 b[0] = 10
 ```
-
 Then the memory for BOTH A and B becomes `[10] [2] [3]`.  
 `a[0]` is also `10`.  
 If we don't want this, and only want to copy the value, we use `copy` (`list2 = list1.copy()`).  
@@ -361,6 +365,7 @@ If we don't want this, and only want to copy the value, we use `copy` (`list2 = 
 ### Dictionary
 
 - A collection of data stored as `key:value` pairs.
+- It's ordered, mutable, and does not allow duplicates in keys.
 
 ```
 my_dict = {
@@ -371,7 +376,20 @@ my_dict = {
 }
 ```
 
-   🚨 insert dictionary table of tool methods thing here :p
+<ins>Dictionary Methods</ins>  
+| Method | Description |
+| --- | --- |
+| clear() |Removes all the elements from the dictionary |
+| copy() | Returns a copy of the dictionary |
+| fromkeys() | Returns a dictionary ith the specified keys and value |
+| get() | Returns the value of the specified key |
+| items() | Returns a list containing a tuple for each key-value pair |
+| keys() | Returns a list containing the dictionary's keys |
+| pop() | Removes the element with the specified key |
+| popitem() | Removes the last inserted key-value pair |
+| setdefault() | Returns the value of the specified key. If the key does not exist: insert the key, with the specified value |
+| update() | Updates the dictionary with the specified key-value pairs |
+| values() | Returns a list of all the values in the dictionary |
 
 **Usage of Dictionaries:**
 - Structured data: user profiles, mapping csv...
@@ -388,21 +406,31 @@ Very confusing.
 
 ### Tuple
 
-- A collection which is orered, immutable (cannot be dynamically changed, e.g. adding numbers inbetween others) an allow duplicate values.  
-`point= (3,7)`  
-Tuple is less used than other data types.
+- A collection which is ordered, immutable (cannot be dynamically changed, e.g. adding numbers inbetween others), and allows duplicate values.  
+`point = (3,7)`  
+Tuples are less used than other data types.
 
 ### Set
 
 - A collection of different things.  
 `fruits = {"apple", "banana", "cherry", "tomato"}`  
 `vegetables = {"potato", "cabbage", "tomato"}`  
-Unordered, mutable and no duplicate variables.  
-NOT `list()`.  
+Unordered, mutable and no duplicate variables.
+In a set, `True` and `1` are considered the same value. The same goes for `False` and `0`.
+You can add/remove items but not change them.
+SETS are not to be confused with `list()`.  
 
-   🚨 insert huge comparison table here :p
+<insComparisons</ins>  
+| List | Tuple | Set | Dictionary |
+| --- | --- | --- | --- |
+| list() | tuple() | set() | dict() |
+| [1, 2, 3] | (1, 1) | {1, 2, 3} | {1:"a", 2:"b"} |
+| allows duplicates | allows duplicates | **does not allow duplicates** | allows duplicates in values but not in keys |
+| mutable | **immutable** | mutable | mutable |
+| ordered | ordered | unordered | ordered (Python 3.7 and above) |
+| frequent modifications | immutability | uniqueness | key-value pairs |
 
-### Solution to Task 3
+### Solution to Task 3 from Jupyter Notebook
 
 This is the code for the 3rd task:
 ```
@@ -428,7 +456,7 @@ print(word_counter(test_input))
 ```
 Very confusing aaaaa
 
-## 26/05/26 Notes
+## 26/05/26 Notes (week 7)
 
 ### Categories of Errors
 
@@ -465,7 +493,7 @@ def age(x):
    return x
 ```
 
-## 02/06/26 Notes
+## 02/06/26 Notes (week 8)
 
 ### Procedural Programming
 idk
@@ -608,7 +636,7 @@ deposit_amount(card, 10)
 print(card)
 ```
 
-## 09/06/26 Notes
+## 09/06/26 Notes (week 9)
 🚨 NOT REQUIRED FOR THE EXAM 🚨
 
 ### Mutability PART 2
