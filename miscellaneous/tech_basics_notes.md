@@ -29,7 +29,8 @@ A **low-level programming language** is closer to computer speech (eg. a = 01000
 2. Expression
    - Expression → Evaluation → Value (eg. `123 , 1+2+3+4 , n == 3`).  
 4. Variables
-   - A variable name should begin with a letter, and it can only contain letters, numbers and underscores.  
+   - A variable name should begin with a letter, and it can only contain letters, numbers and underscores.
+
 Lowercase and uppercase letters are different characters. `word` , `Word` and `WORD` are three different variables.  
 It is a common practice in Python to use only lowercase characters in variable names. For multiple words, use an underscore between the words (eg. `family_name`).  
      - A piece of memory that stores a value that can be changed (eg. `x = 1`).
@@ -421,7 +422,8 @@ Very confusing.
 
 ### Tuple
 
-- A collection which is ordered, immutable (cannot be dynamically changed, e.g. adding numbers inbetween others), and allows duplicate values.  
+- A collection which is ordered, immutable (cannot be dynamically changed, e.g. adding numbers inbetween others), and allows duplicate values.
+
 `point = (3,7)`  
 Tuples are less used than other data types.
 
