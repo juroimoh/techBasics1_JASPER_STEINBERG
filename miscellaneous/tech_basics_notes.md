@@ -79,6 +79,7 @@ Includes arithmetic operators, assignment operators, comparison operators, logic
 | += | x += 3 | x = x + 5 |
 | -= | x -= 3 | x = x - 3 |
 | /= | x /= 3 | x = x / 3 |
+
 (there are more assignment operators, but none we have used in class.)
 
 <ins>Comparison Operators</ins>  
