@@ -1,3 +1,7 @@
+# Disclaimer
+
+This `.md` contains all the notes from the slides. For more in depth content, look through the exercises for Jupyter Notebook for each week.
+
 # Class Notes
 
 ## 14/04/26 Notes /week 1
