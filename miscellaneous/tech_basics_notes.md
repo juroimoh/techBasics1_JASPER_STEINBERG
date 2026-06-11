@@ -29,7 +29,8 @@ A **low-level programming language** is closer to computer speech (eg. a = 01000
 2. Expression
    - Expression → Evaluation → Value (eg. `123 , 1+2+3+4 , n == 3`).  
 4. Variables
-   - A variable name should begin with a letter, and it can only contain letters, numbers and underscores.  
+   - A variable name should begin with a letter, and it can only contain letters, numbers and underscores.
+
 Lowercase and uppercase letters are different characters. `word` , `Word` and `WORD` are three different variables.  
 It is a common practice in Python to use only lowercase characters in variable names. For multiple words, use an underscore between the words (eg. `family_name`).  
      - A piece of memory that stores a value that can be changed (eg. `x = 1`).
@@ -63,9 +64,9 @@ Includes arithmetic operators, assignment operators, comparison operators, logic
 
 <ins>Arithmetic Operators</ins>  
 | Operator | Name | Example |
-| --- | --- | --- |
+| --| --| --|
 | + | Addition | x + y |
-| - | Subtraction | x - y |
+| | Subtraction | x - y |
 | * | Multiplication | x * y |
 | / | Division | x / y |
 | % | Modulus | x % y |
@@ -138,6 +139,7 @@ trip to google
 
 ### While Loop
 - Executes a set of statements as long as **a condition** is true / is met.
+
 `while <statement>:`  
 `   <block>`  
 An example:  
@@ -147,7 +149,8 @@ An example:
 `   print(n)`
 
 ### For Loop
-- Interates over a sequence.  
+- Interates over a sequence.
+
 Can be either a list, a tuple, a dictionary, a set or a string.
 
 `for <variable> in <collection>:`  
@@ -350,13 +353,15 @@ This prints: `The first class is: Technical Basics I`.
 ### Lists  
 (covered a bit before)
 
-- A collection of ordered, mutable, heterogenous elements.  
+- A collection of ordered, mutable, heterogenous elements.
+
 `my_list = ["apple", "banana", "cherry"]`  
 Arrays are for homogenous elements, with no built-in support in Python.
 
 ### Mutability
 
-- An object is considered mutable if its value can be changed after it has been created.  
+- An object is considered mutable if its value can be changed after it has been created.
+
 Mutable Data types: `list`, `set`, `dictionary`.  
 Immutable Data types: `int`, `float`, `bool`, `string`, `byte`, `tuple` (once a value has been set, its value cannot be changed).
 
@@ -415,8 +420,9 @@ my_dict = {
 
 ### Hash Table
 
-- The inner working mechanism of dictionary, a layer of encryption.  
-`a9s7h4fs768d7fa876d4gd978df`  
+- The inner working mechanism of dictionary, a layer of encryption (eg. SHA256).
+
+An example: `a9s7h4fs768d7fa876d4gd978df`  
 Very confusing.  
 
 ### Tuple
@@ -428,7 +434,8 @@ Tuples are less used than other data types.
 
 ### Set
 
-- A collection of different things.  
+- A collection of different things.
+
 `fruits = {"apple", "banana", "cherry", "tomato"}`  
 `vegetables = {"potato", "cabbage", "tomato"}`
 
@@ -547,7 +554,8 @@ Dictionaries, lists, and strings are pre-defined classes in Python.
 When you create a list, you are creting an object/instance from the class `list`.
 
 ### Classes
-- Shapes: rectangle, triangle, circle...  
+- Shapes: rectangle, triangle, circle...
+
 Classes are usually named in `camel case`. That means that all the words in the class name are written together without spaces, and each word is capitalized (`BankAccount`, `LibraryCard` etc.)
 
 ### Object
@@ -667,7 +675,8 @@ Mutability allows you to create a list `[]` of objects and update each one indiv
 
 ### Encapsulation
 A common feature in object-oriented programming languges: Classes can usually hide some of their attributes from the outside.  
-- If you don't want attibutes to be edited.  
+- If you don't want attibutes to be edited.
+
 Hidden attributes are usually called `private`. In Python this is achieved by adding two underscores `__` to the beginning ofthe attribute name.
 
 Example with Setters and Getters:
