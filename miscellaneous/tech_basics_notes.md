@@ -1,5 +1,16 @@
 **Disclaimer:** This `.md` contains all the notes from the slides. For more in depth content, look through the exercises for Jupyter Notebook for each week.
 
+The exam will be on the following topics:
+1. Syntax for different data types
+2. Conditional statements and Loops
+3. Indexes for list and strin
+4. Naming conventions (variables, functions and classes
+5. Basic programming keywords in python (for, while, class, def...
+6. Basic printing techniques (print without line break, print variables with messages)
+7. Common built-in functions and how to use them (input(), len()...)
+8. Files and exceptions handling
+9. Basic concepts (attributes/methods) associated with class/objects and how to use them → first session from OOP
+
 # Class Notes
 
 ## 14/04/26 Notes (week 1)
@@ -466,7 +477,6 @@ Very confusing aaaaa
 
 Exceptions:  
 It is possible to handle Exceptions so that the execution continues despite them occuring:
-
 ```
 try:
    age = int(input("Please enter your age: "))
