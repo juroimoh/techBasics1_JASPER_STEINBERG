@@ -486,14 +486,14 @@ else:
    print("Nothing went wrong.")
 ```
 
-Typical Runtime Errors:
-1. `ValueError`: When the argument passed to a function is somehow invalid (`float("1,23")`).
-2. `TypeError`: When the value is of the wrong type (`len(10)`).
-3. `InexError`: When trying to refer to an index which doesn't exist (`list[5]`).
-4. `ZeroivisionError`: When trying to divide by zero (`sum(my_list / len(my_list)`).
+Typical Runtime Errors:  
+1. `ValueError`: When the argument passed to a function is somehow invalid (`float("1,23")`).  
+2. `TypeError`: When the value is of the wrong type (`len(10)`).  
+3. `InexError`: When trying to refer to an index which doesn't exist (`list[5]`).  
+4. `ZeroivisionError`: When trying to divide by zero (`sum(my_list / len(my_list)`).  
 Of these, Value and Type errors are the most common.
 
-Raising Exceptions:
+Raising Exceptions:  
 ```
 def age(x):
    if type(x) is not int:
@@ -506,16 +506,17 @@ def age(x):
 ## 02/06/26 Notes (week 8)
 
 ### Procedural Programming
-idk
+A programming paradigm where a program is structured as a series of functions, that perform specific tasks.  
+- Communication is done by passing arguments and returning values  
+- It focuses on procedures and logic
 
-### Object-Oriented Programming
-A programming paradigm that organizes software design around data, or objects, rather than functions and logic  
+### Object-Oriented Programming  
+A programming paradigm that organizes software design around data, or objects, rather than functions and logic.  
 - It binds certain data and functions in a structured way (similar to a dictionary)  
 - Efficient, less code
 
 ### Classes
-A class is the blueprint of an object
-
+A class is the blueprint of an object:
 ```
 class Item:
 
@@ -540,6 +541,7 @@ Dictionaries, lists, and strings are pre-defined classes in Python.
 When you create a list, you are creting an object/instance from the class `list`.
 
 ### Classes
+- Shapes: rectangle, triangle, circle...
 Classes are usually named in `camel case`. That means that all the words in the class name are written together without spaces, and each word is capitalized (`BankAccount`, `LibraryCard` etc.)
 
 ### Object
@@ -547,16 +549,19 @@ An object is an instance of a class. We can have many objects from the same clas
 
 ```
 torch = Item("torch","tool","Lights up dark places.")
-key = Item("key","tool","Opens a locke door.")
+key = Item("key","tool","Opens a locked door.")
 torch.use()
 ```
 
 <ins>Terminologies</ins>  
 | Standalone | Associated with an object/class |
 | --- | --- |
-| Functions | idk |
-| Variables | idk |
+| Functions | Methods |
+| Variables | Attributes |
 
+### Special Methods/ Magic Methods
+Python Magic methods are the methods starting and ending with double underscores `__`.
+They are also called **Dunder Methods**, which stands for "Double Under (Underscores)".
 ```
 class SampleClass:
    def __init__():
@@ -653,7 +658,7 @@ print(card)
 Mutability allows you to create a list `[]` of objects and update each one individually.  
 
 ### Encapsulation
-A common feature in object-oriented programming languges: classes can usually hide some of their attributes from the outside.  
+A common feature in object-oriented programming languges: Classes can usually hide some of their attributes from the outside.  
 - If you don't want attibutes to be edited.
 Hidden attributes are usually called `private`. In Python this is achieved by adding two underscores `__` to the beginning ofthe attribute name.
 
@@ -675,7 +680,9 @@ class Cola:
 
 ### Inheritance
 
-Inheritance allows us to define a class that inherits all the methods and properties of IDK
+Inheritance allows us to define a class that inherits all the methods and properties from another class.  
+- _Parent class_ is the class being inherited from, also called base class.  
+- _Child class_ is the class that inherits from another class, also called derived class / sub class.
 
 ### Protected Attibutes
 Protected Attributes are accessible tosubclasses but not to outside. In Python this is achieved by adding one underscore `_` to the beginning ofthe attribute name.
@@ -687,4 +694,4 @@ Protected Attributes are accessible tosubclasses but not to outside. In Python t
 | Protected | self._name | no | yes |
 | Private | self.__name | no | no |
 
-double check graph above
+End of `.md` notes. Thanks for reading :3
