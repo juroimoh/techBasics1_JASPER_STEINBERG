@@ -212,23 +212,23 @@ Slice: `sub_list = my_int_list = [:3]` (1, 3, 5)
 
 Python has some **built in** functions, like `len()`, `sorted()`, `print()`, `input()` etc.
 
-A simple function:
+A simple function:  
 `def print_message():`  
    `print("This is my own function!")`  
 `print_message()`
 
 It is common practice in Python to name functions like variables (`open_folder` instead of `openFolder`).
 
-Functions are:
-1. Reusable (no need to repeat code)
-2. Modularization
+Functions are:  
+1. Reusable (no need to repeat code)  
+2. Modularization  
 3. Readability
 
 Functions do not need an input or output.
 
 ### Arguments and Parameters
 
-You can pass arguments into a function:
+You can pass arguments into a function:  
 `def message(text):`   # The text is called 'parameter'  
 `   print("Message:",text)`  
 `message("This si my own function!")`   # Argument  
@@ -347,11 +347,11 @@ This prints: `The first class is: Technical Basics I`.
 
 ## 19/05/26 Notes (week 6)
 
-### Lists
+### Lists  
 (covered a bit before)
 
-- A collection of ordered, mutable, heterogenous elements.
-`my_list = ["apple", "banana", "cherry"]`
+- A collection of ordered, mutable, heterogenous elements.  
+`my_list = ["apple", "banana", "cherry"]`  
 Arrays are for homogenous elements, with no built-in support in Python.
 
 ### Mutability
@@ -365,7 +365,7 @@ Immutable Data types: `int`, `float`, `bool`, `string`, `byte`, `tuple` (once a 
 The value of a variable is actually not stored in the variable itself. What is stored in a variable is a **refrence**, information about the **location** in computer memory where the value can be found.  
 
 `my_list = [1,2,3]`  
-my_list   -->   [1] [2] [3] (in memory)  
+my_list   -->   [1] [2] [3] (in memory)
 
 In the following code:
 ```
@@ -379,7 +379,7 @@ If we don't want this, and only want to copy the value, we use `copy` (`list2 = 
 
 ### Dictionary
 
-- A collection of data stored as `key:value` pairs.
+- A collection of data stored as `key:value` pairs.  
 - It's ordered, mutable, and does not allow duplicates in keys.
 
 ```
@@ -407,10 +407,10 @@ my_dict = {
 | values() | Returns a list of all the values in the dictionary |
 
 **Usage of Dictionaries:**
-- Structured data: user profiles, mapping csv...
-- Lookup tables: ISO codes & values...
-- Storing settings
-- Counting frequency
+- Structured data: user profiles, mapping csv...  
+- Lookup tables: ISO codes & values...  
+- Storing settings  
+- Counting frequency  
 - Passing keyword arguments for functions
 
 ### Hash Table
@@ -429,11 +429,12 @@ Tuples are less used than other data types.
 
 - A collection of different things.  
 `fruits = {"apple", "banana", "cherry", "tomato"}`  
-`vegetables = {"potato", "cabbage", "tomato"}`  
-Unordered, mutable and no duplicate variables.
-In a set, `True` and `1` are considered the same value. The same goes for `False` and `0`.
-You can add/remove items but not change them.
-SETS are not to be confused with `list()`.  
+`vegetables = {"potato", "cabbage", "tomato"}`
+
+Sets are unordered, mutable and no duplicate variables.  
+In a set, `True` and `1` are considered the same value. The same goes for `False` and `0`.  
+You can add/remove items but not change them.  
+SETS are not to be confused with `list()`.
 
 <insComparisons</ins>  
 | List | Tuple | Set | Dictionary |
@@ -545,11 +546,13 @@ Dictionaries, lists, and strings are pre-defined classes in Python.
 When you create a list, you are creting an object/instance from the class `list`.
 
 ### Classes
-- Shapes: rectangle, triangle, circle...
+- Shapes: rectangle, triangle, circle...  
 Classes are usually named in `camel case`. That means that all the words in the class name are written together without spaces, and each word is capitalized (`BankAccount`, `LibraryCard` etc.)
 
 ### Object
-An object is an instance of a class. We can have many objects from the same class. Changing one object won't influence other objects of the same class.
+An object is an instance of a class.  
+We can have many objects from the same class.  
+Changing one object won't influence other objects of the same class.
 
 ```
 torch = Item("torch","tool","Lights up dark places.")
@@ -564,7 +567,7 @@ torch.use()
 | Variables | Attributes |
 
 ### Special Methods/ Magic Methods
-Python Magic methods are the methods starting and ending with double underscores `__`.
+Python Magic methods are the methods starting and ending with double underscores `__`.  
 They are also called **Dunder Methods**, which stands for "Double Under (Underscores)".
 ```
 class SampleClass:
@@ -663,7 +666,7 @@ Mutability allows you to create a list `[]` of objects and update each one indiv
 
 ### Encapsulation
 A common feature in object-oriented programming languges: Classes can usually hide some of their attributes from the outside.  
-- If you don't want attibutes to be edited.
+- If you don't want attibutes to be edited.  
 Hidden attributes are usually called `private`. In Python this is achieved by adding two underscores `__` to the beginning ofthe attribute name.
 
 Example with Setters and Getters:
