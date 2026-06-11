@@ -164,7 +164,31 @@ This would return `empl`, see Index above. Keep in mind the out value isn't incl
 - List is a sequence of heterogenous items
 - New lists can be created with bracket notation
 
-ADD MORE HERE ME
+`my_list = []`  
+`my_int_list = [1, 3, 5, 7, 9]`  
+`my_fruit_list = ["apple", "banana", "mango"]`  
+
+You can also index and slice lists.
+
+Index: `first_item = my_int_list[0]`  (1)
+Slice: `sub_list = my_int_list = [:3]` (1, 3, 5)
+
+<ins>List Methods</ins>  
+| Method | Description |
+| --- | --- |
+| append() | Adds an element at the end of the list |
+| clear() | Removes all of the elements from the list |
+| copy() | Returns a copy of the list |
+| count() | Returns the number of elements with the specified value |
+| extend() | Adds the elements of a list (or any iterable), to the end of the current list |
+| index() | Returns the index of the first element with the specified value |
+| insert() | Adds an element at the specified position |
+| pop() | Removes the element a the specified position |
+| remove() | Removes the first item with the specified value |
+| reverse() | Reverses the order of the list |
+| sort() | Sorts the list |
+
+Python also has some **built in** functions, like `len()`, `sorted()`, `print()`, `input()` and more.
 
 ##  12/05/26 Notes
 
