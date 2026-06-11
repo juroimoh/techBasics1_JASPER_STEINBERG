@@ -187,7 +187,7 @@ This would return `empl`, see Index above. Keep in mind the out-value isn't incl
 
 You can also index and slice lists.
 
-Index: `first_item = my_int_list[0]`  (1)
+Index: `first_item = my_int_list[0]`  (1)  
 Slice: `sub_list = my_int_list = [:3]` (1, 3, 5)
 
 <ins>List Methods</ins>  
