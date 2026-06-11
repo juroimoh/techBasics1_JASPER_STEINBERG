@@ -117,8 +117,8 @@ Consider the code:
 
 This results in an error.  
 Corrections follow:  
-`print(f"The result is {result}")`  
-`print("The result is", result)`
+1. `print(f"The result is {result}")`  
+2. `print("The result is", result)`
 
 A snippet of working code, determining prices for different ages:  
 ```
