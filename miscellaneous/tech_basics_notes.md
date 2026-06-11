@@ -115,7 +115,8 @@ Consider the code:
 `result = 14 * 4`  
 `print("The result is" + result)`
 
-This results in an error. Corrections follow:  
+This results in an error.  
+Corrections follow:  
 `print(f"The result is {result}")`  
 `print("The result is", result)`
 
