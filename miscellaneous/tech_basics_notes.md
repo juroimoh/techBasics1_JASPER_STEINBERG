@@ -278,12 +278,14 @@ You should try to avoid global variables with larger projects (global variables 
 
 ### Functions inside a Function
 
-`def myfunc()`  
-`   x = 300`  
-`   def myinnerfunc():`  
-`      print(x)`  
-`   myinnerfunc()`  
-`myfunc()`
+```
+def myfunc()
+   x = 300
+   def myinnerfunc():
+      print(x)
+   myinnerfunc()
+myfunc()
+```
 
 ### Main Function
 
@@ -307,13 +309,15 @@ Imported into **test.py** (text.py becomes the <ins>main</ins> function):
 
 - Recursion is when a function calls itself.
 
-`def recursion(x):`  
-`   if x >= 0:`  
-`      return x;`  
-`   recursion (x-1)`  
-`print(recursion(10))`  
-`print(recursion(0))`  
-`print(recursion(-7))`
+```
+def recursion(x):
+   if x >= 0:
+      return x;
+   recursion (x-1)
+print(recursion(10))
+print(recursion(0))
+print(recursion(-7))
+```
 
 print(recursion(5)) would print `5`, then stop.
 
