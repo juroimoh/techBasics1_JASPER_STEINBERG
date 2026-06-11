@@ -140,19 +140,19 @@ trip to google
 - Executes a set of statements as long as **a condition** is true / is met.
 `while <statement>:`  
 `   <block>`  
-An example:
-`n = 0`
-`while n < 5:`
-`   n += 1`
+An example:  
+`n = 0`  
+`while n < 5:`  
+`   n += 1`  
 `   print(n)`
 
 ### For Loop
-- Interates over a sequence.
+- Interates over a sequence.  
 Can be either a list, a tuple, a dictionary, a set or a string.
 
 `for <variable> in <collection>:`  
-`   <block>`
-An example:
+`   <block>`  
+An example:  
 `for x in range(6):`  
 `   print(x)`
 
