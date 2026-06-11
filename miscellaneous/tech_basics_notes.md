@@ -118,15 +118,17 @@ This results in an error. Corrections follow:
 `print("The result is", result)`
 
 A snippet of working code, determining prices for different ages:  
-`age = input("Enter your age:"))`  
-`age = int(age)`  
-`if age > 0 and age < 110:`  
-`    if age > 18:`  
-`        print("1 Adult Ticket")`  
-`    else:`  
-`        print("1 Discount Ticket")`  
-`else:`  
-`    print("Please enter a valid age!")`
+```
+age = input("Enter your age:"))
+age = int(age)
+if age > 0 and age < 110:
+    if age > 18:
+        print("1 Adult Ticket")
+    else:
+        print("1 Discount Ticket")
+else:
+    print("Please enter a valid age!")
+```
 
 ## 28/04/26 Notes (week 3)
 
