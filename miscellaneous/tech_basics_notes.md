@@ -468,14 +468,14 @@ This is the code for the 3rd task:
 import re
 
 def word_counter(corpus:str):
-    wordcount = {} # (an empty dictionary)
-    # Removes all special characters:
+    wordcount = {}   # (an empty dictionary)
+       # Removes all special characters:
     corpus = re.sub('\\W+',' ', corpus)
-    # Split the string into a list of words:
+       # Split the string into a list of words:
     words = corpus.split()
-    # Look through the list:
+       # Look through the list:
     for word in words:
-        word = word.lower() # (make lowercase)
+        word = word.lower()   # (make lowercase)
         if word in wordcount:
             wordcount[word] += 1
         else:
@@ -518,7 +518,7 @@ Raising Exceptions:
 def age(x):
    if type(x) is not int:
       raise TypeError("Only integers are allowed.")
-   if x < 0: # Or a ValueError
+   if x < 0:   # Or a ValueError
       raise Exception("Sorry, the age needs to be greater than zero.")
    return x
 ```
@@ -540,18 +540,18 @@ A class is the blueprint of an object:
 ```
 class Item:
 
-   # constructor
+      # constructor
    def __init__(self, name, category,description):
-      # attributes
+         # attributes
       self.name = name
-      # 'type' is not used because it is a reserved keyword in python
+         # 'type' is not used because it is a reserved keyword in python
       self.category = category
       self.description = description
-      self.used = False # default values
+      self.used = False   # default values
 
-   # method
+      # method
    def use(self):
-      # it does something deoending on the type
+         # it does something deoending on the type
       self.used = True
 ```
 
@@ -588,9 +588,9 @@ They are also called **Dunder Methods**, which stands for "Double Under (Undersc
 ```
 class SampleClass:
    def __init__():
-      pass # constructor method
+      pass   # constructor method
    def __str__():
-      pass # override the default printing method
+      pass   # override the default printing method
 ```
 
 Optimized Jupyter Notebook Exercise:
