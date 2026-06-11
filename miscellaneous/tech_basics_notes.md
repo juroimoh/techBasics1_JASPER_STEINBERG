@@ -175,7 +175,7 @@ You can also create Substrings, also known as Slicing.
 `sub_string[begin : end]`  
 `string = "Exemplary"`  
 `sub_string = string[2:6]`
-This would return `empl`, see Index above. Keep in mind the out value isn't included (6, or `a`).
+This would return `empl`, see Index above. Keep in mind the out-value isn't included (6, or `a`).
 
 ### Lists
 - List is a sequence of heterogenous items
