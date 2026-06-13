@@ -25,9 +25,9 @@ A **low-level programming language** is closer to computer speech (eg. a = 01000
 ### Programming Terminology
 
 1. Statement
-   - A statement performs actions (eg. `print("hello") , if x == 1`).  
+   - A statement performs actions (eg. `print("hello"), if x == 1`).  
 2. Expression
-   - Expression → Evaluation → Value (eg. `123 , 1+2+3+4 , n == 3`).  
+   - Expression → Evaluation → Value (eg. `123, 1+2+3+4, n == 3`).  
 4. Variables
    - A variable name should begin with a letter, and it can only contain letters, numbers and underscores.
 
