@@ -43,7 +43,7 @@ For multiple words, use an underscore between the words (eg. `family_name`).
 - string `"text"`
 - int `394`
 - float `3.1415926`
-- boolean `True or False` *Must be Uppercase, `false` would be wrong.
+- boolean `True or False` *Must be uppercase, `false` would be wrong.
 - list, tuple, range
 - set, dict
 - NoneType
@@ -51,9 +51,9 @@ For multiple words, use an underscore between the words (eg. `family_name`).
 A small block of code containing a conditional if-clause:
 ```
 if semester == 2:
-   print("Take Tech Basics I)
+   print("Take Tech Basics I.")
 elif semester == 3:
-   print("Take Tech Basics II)
+   print("Take Tech Basics II.")
 else:
    print("No more Tech Basics!")
 ```
