@@ -1,4 +1,4 @@
-**Disclaimer:** This `.md` contains all the notes from the slides. For more in depth content, look through the exercises for Jupyter Notebook for each week.
+**Disclaimer:** This `.md` contains all the notes from the slides. For more in depth content, look through the exercises for Jupyter Notebook for each week. There <ins>will</ins> be things on the exam that are not covered here.
 
 The <ins>exam</ins> will be on the following topics:
 1. Syntax for different data types
