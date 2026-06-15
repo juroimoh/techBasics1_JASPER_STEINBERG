@@ -451,7 +451,7 @@ In a set, `True` and `1` are considered the same value. The same goes for `False
 You can add/remove items but not change them.  
 SETS are not to be confused with `list()`.
 
-<insComparisons</ins>  
+<ins>Comparisons</ins>  
 | List | Tuple | Set | Dictionary |
 | --- | --- | --- | --- |
 | list() | tuple() | set() | dict() |
