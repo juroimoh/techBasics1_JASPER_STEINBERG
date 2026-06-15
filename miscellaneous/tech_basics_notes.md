@@ -455,7 +455,7 @@ SETS are not to be confused with `list()`.
 | List | Tuple | Set | Dictionary |
 | --- | --- | --- | --- |
 | list() | tuple() | set() | dict() |
-| [1, 2, 3] | (1, 1) | {1, 2, 3} | {1:"a", 2:"b"} |
+| [1, 2, 3] | (1, 1) | {1, 2, 3} | {"name": "Eleri", "age": 22} |
 | allows duplicates | allows duplicates | **does not allow duplicates** | allows duplicates in values but not in keys |
 | mutable | **immutable** | mutable | mutable |
 | ordered | ordered | unordered | ordered (Python 3.7 and above) |
