@@ -5,9 +5,9 @@ The <ins>exam</ins> will be on the following topics:
 2. Conditional statements and Loops
 3. Indexes for list and string
 4. Naming conventions (variables, functions and classes)
-5. Basic programming keywords in python (for, while, class, def...)
+5. Basic programming keywords in python (for, while, class, def, ...)
 6. Basic printing techniques (print without line break, print variables with messages)
-7. Common built-in functions and how to use them (input(), len()...)
+7. Common built-in functions and how to use them (input(), len(), ...)
 8. Files and exceptions handling
 9. Basic concepts (attributes/methods) associated with class/objects and how to use them → first session from OOP
 
