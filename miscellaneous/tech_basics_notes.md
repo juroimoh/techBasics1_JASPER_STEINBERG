@@ -723,3 +723,10 @@ Protected Attributes are accessible tosubclasses but not to outside. In Python t
 | Private | self.__name | no | no |
 
 End of `.md` notes. Thanks for reading :3
+
+## 16/06/26 Notes (week 10)
+
+### Streamlit
+- Used to build data-based web applications (Data Science, LLMs, ...)
+- Browser-based Interface
+- Easy Development
