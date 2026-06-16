@@ -11,6 +11,10 @@ The <ins>exam</ins> will be on the following topics:
 8. Files and exceptions handling
 9. Basic concepts (attributes/methods) associated with class/objects and how to use them → first session from OOP
 
+### misc notes:
+`break` = stop the loop completely.
+`continue` = skip this round, but keep looping.
+
 # Class Notes
 
 ## 14/04/26 Notes (week 1)
