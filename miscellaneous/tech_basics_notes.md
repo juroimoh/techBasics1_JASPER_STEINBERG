@@ -730,3 +730,9 @@ End of `.md` notes. Thanks for reading :3
 - Used to build data-based web applications (Data Science, LLMs, ...)
 - Browser-based Interface
 - Easy Development
+
+held exam
+
+## 23/06/26 Notes (week 11)
+
+went over the exam answers
