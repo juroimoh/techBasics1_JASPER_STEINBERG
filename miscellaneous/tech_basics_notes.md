@@ -713,7 +713,7 @@ Inheritance allows us to define a class that inherits all the methods and proper
 - _Child class_ is the class that inherits from another class, also called derived class / sub class.
 
 ### Protected Attibutes
-Protected Attributes are accessible tosubclasses but not to outside. In Python this is achieved by adding one underscore `_` to the beginning ofthe attribute name.
+Protected Attributes are accessible to sub classes but not to outside. In Python this is achieved by adding one underscore `_` to the beginning ofthe attribute name.
 
 <ins>Terminologies</ins>  
 | Access Modifier | Example | Visible to Client | Visible to Derived Class |
