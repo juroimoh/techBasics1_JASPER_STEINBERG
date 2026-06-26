@@ -28,7 +28,7 @@ WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Space Shooter - Final Version")
 ```
-All necessary libraries are installed, and the screen size is setup with a application title.  
+All necessary libraries are installed, and the screen size is setup with a application title `pygame.display.set_caption(" ")`.  
 
 ---
 
