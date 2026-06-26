@@ -13,6 +13,8 @@ Although the game is fully functional, while playing I encountered some glaring 
 
 The within the code written by Ashish have been kept. All comments from me are outside the code blocks. Ashish does provide surface level comments, explaining the general application of different functions. 
 
+---
+
 The code begins as follows:  
 ```
 import pygame
@@ -27,6 +29,8 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Space Shooter - Final Version")
 ```
 All necessary libraries are installed, and the screen size is setup with a application title.  
+
+---
 
 ```
     # Colors
@@ -69,6 +73,8 @@ Here all variables are defined. It seems this game uses almost entirely global v
 Since the colors don't change, they are constants, and therefore uppercase.
 Interesting to see is the `player_x` variable, which initially positions the ship in the center of the screen, but since images are displayed from the corner, half of `player_width` is taken away to perfectly center the player ship.
 
+---
+
 ```
 def create_enemies():
     global enemies
@@ -83,6 +89,8 @@ Random `x` and `y` values are chosen, and appended to the enemies list.
 The `x` value is chosen cleverly to be between `0` and the `WIDTH - enemy_width` to ensure the entire enemy is on screen.  
 Then, the `y` value is to seperate the heights of the enemies, so they don't come down in waves, but more randomly.  
 The `y` being negative means the enemies are spawned off screen.
+
+---
 
 ```
 def reset_game():
@@ -113,6 +121,8 @@ def draw_enemies():
 These functions draw the different elements, which are later called every frame.  
 Where elements are summoned is very efficient.  
 `draw_enemies()`, for example, iterates through the list to draw each enemy, and uses each enemies current coordinates for the box that gets drawn.
+
+---
 
 ```
 def game_over_screen():
@@ -147,6 +157,8 @@ def game_over_screen():
 This function runs as a gameloop, where it only runs when the player runs out of lives.  
 This renders the text and ability to quit, and stops all other game functions from running since they are not being called.
 
+---
+
 ```
     # Start enemies
 create_enemies()
@@ -176,6 +188,8 @@ This is the main game loop.
 Before anything runs, enemies are already summoned, since the game starts automatically.  
 To begin the `while True:` loop, the ability to quit is added, and everytime the `spacebar` is hit, the player score increases, and a bullet is spawned, using a similar mechanic to how enemies spawn.
 
+---
+
 ```
             # Movement
         keys = pygame.key.get_pressed()
@@ -197,6 +211,8 @@ Interesting to note is that `player_speed` is set to `6`, and is never changed.
 When testing the game I also noticed the enemies move very very slightly faster over time (barely noticable), which is confirmed here.  
 Turning up `enemy_speed` a tiny bit instantly made the game feel more engaging.
 
+---
+
 ```
         # Move enemies and respawn if bottom reached (NO life loss)
     for e in enemies[:]:
@@ -206,7 +222,9 @@ Turning up `enemy_speed` a tiny bit instantly made the game feel more engaging.
             enemies.append([random.randint(0, WIDTH - enemy_width), random.randint(-400, -40)])
 ```
 I had to research what `for e in enemies[:]:` does, but apparently it loops through a copied list.  
-Otherwise if `enemies[2]` dies and is removed, then `enemies[3]` turns into `enemies[2]`, and the cycle wouldn't check it (I'm not sure if this is entirely correct).
+Otherwise if `enemies[2]` dies and is removed, then `enemies[3]` turns into `enemies[2]`, and the cycle wouldn't check it (I'm not sure if this is entirely correct).  
+Every frame the position of each enemy is updated according to its speed.
+When an enemy ship passes below the height of the screen (`e[1]` being the x coordinate) it is removed and another enemy is spawned.  
 
 ---
 
@@ -225,7 +243,12 @@ Otherwise if `enemies[2]` dies and is removed, then `enemies[3]` turns into `ene
                 enemies.append([random.randint(0, WIDTH - enemy_width), random.randint(-400, -40)])
                 break
 ```
-DESCRIPTION
+Here, all bullets are checking if they hit an enemy every frame, again using `[:]`.
+When an enemy ship is killed, by checking if the bullet coordinates are within the enemy coordinates, it is removed and another enemy is spawned.  
+I'm not sure if this is the most efficient way, but its probably fine for such a small game (see `colliderect()` below).
+A huge improvement that I added when testing was the chance of spawning another extra enemy, slowly increasing the amount of enemies over time.  
+
+---
 
 ```
         # Player collision → lose life
@@ -237,7 +260,11 @@ DESCRIPTION
             enemies.remove(e)
             enemies.append([random.randint(0, WIDTH - enemy_width), random.randint(-400, -40)])
 ```
-DESCRIPTION
+Here, a built in pygame feature `colliderect()` is used, which checks if the player collides with any incoming enemies.  
+I was also planning on using this feature in my game.  
+If the player collides, a life is removed and another enemy is spawned once again.
+
+---
 
 ```
         # Game over after 5 touches
@@ -251,7 +278,11 @@ DESCRIPTION
     for _ in range(20):
         pygame.draw.circle(screen, WHITE, (random.randint(0, WIDTH), random.randint(0, HEIGHT)), 1)
 ```
-DESCRIPTION
+A check is run here, seeing if the player has run out of lives.  
+If not, then the entire screen is rendered, starting with the background and the stars.  
+I might be wrong but I think it would be better to only check if the player has run out of lives everytime one is removed (e.g. adding it to `if player_rect.colliderect(enemy_rect):` from the previous code segment).
+
+---
 
 ```
     draw_player()
@@ -266,6 +297,12 @@ DESCRIPTION
     pygame.display.update()
     clock.tick(60)
 ```
-DESCRIPTION
+Here, the rest of the screen is updated, with the functions to draw the player, bullets and enemies being called.  
+The score is also updated live, something I am also planning to do in a similar manner.  
+`screen.blit` updates the font in the game window, pasting it in.  
+Finally, the screen updates and the fps is limited/set to 60 to ensure smooth gameplay.
 
-That is the end of the code!
+---
+
+That is the end of the code
+ദ്ദി◝ ⩊ ◜.ᐟ
