@@ -71,7 +71,7 @@ Includes arithmetic operators, assignment operators, comparison operators, logic
 | Operator | Name | Example |
 | --| --| --|
 | + | Addition | x + y |
-| | Subtraction | x - y |
+| - | Subtraction | x - y |
 | * | Multiplication | x * y |
 | / | Division | x / y |
 | % | Modulus | x % y |
