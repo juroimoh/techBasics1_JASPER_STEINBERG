@@ -192,7 +192,10 @@ To begin the `while True:` loop, the ability to quit is added, and everytime the
             # Slowly increase enemy speed
         enemy_speed += 0.0006
 ```
-DESCRIPTION
+This section lets the player move, with the `left arrow` or `a` working to move left, vice versa.  
+Interesting to note is that `player_speed` is set to `6`, and is never changed.  
+When testing the game I also noticed the enemies move very very slightly faster over time (barely noticable), which is confirmed here.  
+Turning up `enemy_speed` a tiny bit instantly made the game feel more engaging.
 
 ```
         # Move enemies and respawn if bottom reached (NO life loss)
@@ -202,7 +205,10 @@ DESCRIPTION
             enemies.remove(e)
             enemies.append([random.randint(0, WIDTH - enemy_width), random.randint(-400, -40)])
 ```
-DESCRIPTION
+I had to research what `for e in enemies[:]:` does, but apparently it loops through a copied list.  
+Otherwise if `enemies[2]` dies and is removed, then `enemies[3]` turns into `enemies[2]`, and the cycle wouldn't check it (I'm not sure if this is entirely correct).
+
+---
 
 ```
         # Bullet hits enemy → enemy disappears
