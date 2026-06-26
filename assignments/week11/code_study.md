@@ -104,6 +104,8 @@ def reset_game():
 ```
 This function simply resets the game to be replayed.
 
+---
+
 ```
 def draw_player():
     pygame.draw.rect(screen, BLUE, (player_x, player_y, player_width, player_height))
