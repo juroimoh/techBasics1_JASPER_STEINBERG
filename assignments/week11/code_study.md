@@ -110,7 +110,9 @@ def draw_enemies():
         pygame.draw.rect(screen, RED, (e[0], e[1], enemy_width, enemy_height))
         pygame.draw.rect(screen, YELLOW, (e[0] + 10, e[1] + 8, 10, 5))
 ```
-DESCRIPTION
+These functions draw the different elements, which are later called every frame.  
+Where elements are summoned is very efficient.  
+`draw_enemies()`, for example, iterates through the list to draw each enemy, and uses each enemies current coordinates for the box that gets drawn.
 
 ```
 def game_over_screen():
@@ -142,7 +144,8 @@ def game_over_screen():
                     pygame.quit()
                     sys.exit()
 ```
-DESCRIPTION
+This function runs as a gameloop, where it only runs when the player runs out of lives.  
+This renders the text and ability to quit, and stops all other game functions from running since they are not being called.
 
 ```
     # Start enemies
@@ -169,7 +172,9 @@ while True:
                 bullet_y = player_y - bullet_height
                 bullets.append([bullet_x, bullet_y])
 ```
-DESCRIPTION
+This is the main game loop.  
+Before anything runs, enemies are already summoned, since the game starts automatically.  
+To begin the `while True:` loop, the ability to quit is added, and everytime the `spacebar` is hit, the player score increases, and a bullet is spawned, using a similar mechanic to how enemies spawn.
 
 ```
             # Movement
