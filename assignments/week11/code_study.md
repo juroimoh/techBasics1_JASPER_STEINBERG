@@ -11,7 +11,7 @@ Although the game is fully functional, while playing I encountered some glaring 
 ![showcase](https://github.com/juroimoh/techBasics1_JASPER_STEINBERG/blob/main/assignments/week11/space_shooter.PNG)  
 `Fig 1`
 
-The within the code written by Ashish have been kept. All comments from me are outside the code blocks. Ashish does provide surface level comments, explaining the general application of different functions. 
+The comments within the code written by Ashish have been kept. All comments from me are outside the code blocks. Ashish does provide surface level comments, explaining the general application of different functions. 
 
 ---
 
